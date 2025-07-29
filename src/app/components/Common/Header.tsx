@@ -5,7 +5,7 @@ import logo from "../../../../public/Logo.svg";
 export default function Header() {
 
   return (
-    <header className="fixed z-[1000] w-full px-[6.4rem] py-[2.3rem] flex items-center justify-between">
+    <header className="bg-[#B9EDFF] w-full px-[6.4rem] py-[2.3rem] flex items-center justify-between">
       <Link href="/" className="block py-[0.9rem]">
         <Image src={logo} alt="Logo" width={264} height={39} />
       </Link>
