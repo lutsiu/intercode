@@ -1,9 +1,10 @@
+import HeroSection from "./sections/Home/Hero";
 
 
 export default function Home() {
   return (
-    <div className="text-red-500">
-      
-    </div>
+    <>
+      <HeroSection/>
+    </>
   );
 }
