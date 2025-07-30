@@ -1,3 +1,4 @@
+import SectionTitle from "@/app/components/Common/SectionTitle";
 import processSteps from "@/app/data/ProcessStepData";
 
 export default function HowDoWeWork() {
@@ -8,8 +9,8 @@ export default function HowDoWeWork() {
       className="pt-[8rem] px-[12rem]"
 
     >
-      <h3 className="text-[4rem] font-bold text-center">Як ми працюємо</h3>
-      <p className="text-[2.4rem] font-medium text-center mt-[3rem]">Почнемо роботу над твоїм завданням протягом <strong>3 днів</strong></p>
+      <SectionTitle title="Як ми працюємо" paddingBottom={30}/>
+      <p className="text-[2.4rem] font-medium text-center">Почнемо роботу над твоїм завданням протягом <strong>3 днів</strong></p>
       <ul className="mt-[7rem] flex items-center justify-center gap-[10.2rem]">
         {processSteps.map((step, i) => {
           return (
