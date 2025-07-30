@@ -22,6 +22,7 @@ body {
 
   /* Black */
   --color-black: #000000;
+  --color-icon-bg: #161616;
   /* White */
   --color-white: #FFFFFF;
 }

@@ -1,6 +1,7 @@
 import HeroSection from "./sections/Home/Hero";
 import HowDoWeWorkSection from "./sections/Home/HowDoWeWork";
-import ProjectCalculator from "./sections/Home/ProjectCalculator";
+import ProjectCalculatorSection from "./sections/Home/ProjectCalculator";
+import ServicesSection from "./sections/Home/Services";
 
 
 export default function Home() {
@@ -8,7 +9,8 @@ export default function Home() {
     <>
       <HeroSection/>
       <HowDoWeWorkSection/>
-      <ProjectCalculator/>
+      <ProjectCalculatorSection/>
+      <ServicesSection/>
     </>
   );
 }
