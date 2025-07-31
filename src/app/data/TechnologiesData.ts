@@ -1,6 +1,6 @@
-import { TechnologyType } from "../types/TechnologyType";
+import { LabeledIconItemType  } from "../types/LabeledIconItemType";
 
-const technologies: TechnologyType[] = [
+const technologies: LabeledIconItemType [] = [
   {
     icon: "/technologies/figma.svg",
     title: "Figma",
@@ -21,6 +21,7 @@ const technologies: TechnologyType[] = [
     icon: "/technologies/telegram.svg",
     title: "Telegram API",
   },
+  
 ];
 
 export default technologies;
