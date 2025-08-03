@@ -1,3 +1,4 @@
+import AboutUsSection from "./sections/Home/AboutUs";
 import HeroSection from "./sections/Home/Hero";
 import HowDoWeWorkSection from "./sections/Home/HowDoWeWork";
 import IndustriesSection from "./sections/Home/Industries";
@@ -15,6 +16,7 @@ export default function Home() {
       <ServicesSection/>
       <TechnologiesSection/>
       <IndustriesSection/>
+      <AboutUsSection/>
     </>
   );
 }
