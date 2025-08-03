@@ -2,7 +2,7 @@ import { ServiceCardType } from "../types/ServiceCardType";
 
 const serviceCards: ServiceCardType[] = [
   {
-    icon: "/services/robot.svg",
+    icon: "/services/star.svg",
     title: "Аутстаффінг",
     duration: "Виконання: обговорюється",
     link: "/"
@@ -20,7 +20,7 @@ const serviceCards: ServiceCardType[] = [
     link: "/"
   },
   {
-    icon: "/services/phone.svg",
+    icon: "/services/smartphone.svg",
     title: "Мобільні апки",
     duration: "Виконання: 5–7 днів",
     link: "/"

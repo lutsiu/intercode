@@ -8,14 +8,12 @@ export default function ServiceCard({icon, title, duration, link}: ServiceCardTy
                     bg-gradient-to-b from-[#9BC3FF] to-[#186AE5] flex flex-col justify-between">
 
   <div>
-    <div className="w-[8rem] h-[8rem] bg-icon-bg flex items-center justify-center rounded-[1.7rem]">
-      <Image 
-        src={icon} 
-        alt={title} 
-        height={32}
-        width={32}
-      />
-    </div>
+    <Image 
+      src={icon} 
+      alt={title} 
+      height={80}
+      width={80}
+    />
     <h4 className="text-[3.6rem] text-white font-extrabold mt-[6.5rem] leading-[4rem]">
       {firstWord}
       {secondWord && <><br />{secondWord}</>}
