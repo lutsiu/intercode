@@ -1,8 +1,26 @@
+'use client';
+
+import { useEffect, useState } from "react";
 import SectionTitle from "../components/Common/SectionTitle";
 import ServicePageCard from "../components/Services/ServicePageCard";
 import serviceItems from "../data/ServicePageItems";
+import ServicePopup from "../components/Home/Services/Popup/Popup";
 
 export default function Services() {
+
+  const [activePopup, setActivePopup] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (activePopup) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = '';
+    }
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [activePopup]);
 
   return (
     <section 
@@ -18,10 +36,12 @@ export default function Services() {
           {serviceItems.slice(0,2).map((it, i) => {
             return (
               <ServicePageCard
-                      key={i}
-                      icon={it.icon}
-                      title={it.title}
-                      subtitle={it.subtitle}
+                  key={i}
+                  icon={it.icon}
+                  title={it.title}
+                  subtitle={it.subtitle}
+                  onClick={() => setActivePopup(i)}
+                  
               />
             )
           })}
@@ -30,15 +50,23 @@ export default function Services() {
           {serviceItems.slice(2, 5).map((it, i) => {
             return (
               <ServicePageCard
-                      key={i}
-                      icon={it.icon}
-                      title={it.title}
-                      subtitle={it.subtitle}
+                  key={i}
+                  icon={it.icon}
+                  title={it.title}
+                  subtitle={it.subtitle}
+                  onClick={() => setActivePopup(i)}
               />
             )
           })}
         </div>
       </div>
+
+      {activePopup && (
+        <ServicePopup
+          item={serviceItems[activePopup]}
+          onClose={() => setActivePopup(null)}
+        />
+      )}
     </section>
   )
 }

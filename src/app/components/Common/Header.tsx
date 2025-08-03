@@ -12,7 +12,7 @@ export default function Header() {
 
       <nav className="flex mt-[0.5rem]">
         <div className="py-[2.4rem] px-[2.4rem] flex gap-[3.3rem]">
-          <Link href="/about" className="text-[1.8rem] font-normal">Про нас</Link>
+          <Link href="/" className="text-[1.8rem] font-normal">Про нас</Link>
           <Link href="/services" className="text-[1.8rem] font-normal">Послуги, які працюють</Link>
           <Link href="/case-studies" className="text-[1.8rem] font-normal">Case Studies</Link>
           <Link href="/rent-in" className="text-[1.8rem] font-normal">Rent an IT Solution</Link>

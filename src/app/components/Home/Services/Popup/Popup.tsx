@@ -1,0 +1,48 @@
+import { ServicePageItemType } from "@/app/types/ServicePageItemType";
+import { Icon } from "@iconify/react";
+import PopupTitle from "./PopupTitle";
+import PopupImage from "./PopupImage";
+import PopupButton from "./PopupButton";
+import PopupDescription from "./PopupDescription";
+
+interface Props extends ServicePageItemType {
+  item: ServicePageItemType;
+  onClose: () => void;
+}
+
+export default function ServicePopup({ onClose, item  }: Props) {
+  const {popup} = item;
+  const {title,intro, description, image, features, finalNote, actionText} = popup;
+  return (
+    <div 
+      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start justify-center overflow-y-auto"
+      role="dialog"
+      aria-modal="true"
+      onClick={onClose} 
+    >
+      <div 
+        className="bg-white rounded-[2.5rem] w-[71%] relative  px-[15rem] py-[8.5rem] flex flex-col gap-[6rem]"
+        onClick={(e) => e.stopPropagation()}
+      >
+        <Icon 
+          icon="clarity:close-line" 
+          width={24} 
+          height={24}
+          className="absolute top-[2.6rem] right-[3.7rem] cursor-pointer"
+          onClick={onClose}  
+        />
+        <PopupTitle 
+          title={title}
+          intro={intro}
+          description={description}
+        />
+        <PopupImage image={image} title={title} />
+        <PopupDescription 
+          features={features}
+          finalNote={finalNote}
+        />
+        <PopupButton actionText={actionText}/>
+      </div>
+    </div>
+  );
+}

@@ -3,13 +3,14 @@ import Image from "next/image";
 interface Props {
   icon: string;           
   title: string; 
-  subtitle: string;   
+  subtitle: string; 
+  onClick: () => void; 
 }
 
-export default function ServicePageCard({icon, title, subtitle} : Props) {
+export default function ServicePageCard({icon, title, subtitle, onClick} : Props) {
 
   return (
-    <article className="flex flex-col justify-between pt-[4.6rem] pb-[5.6rem] px-[4.6rem] 
+    <article className="w-full h-full flex flex-col justify-between pt-[4.6rem] pb-[5.6rem] px-[4.6rem] 
                         bg-gradient-to-b from-[#9BC3FF] to-[#186AE5] rounded-[4rem]">
       <Image src={icon} alt={icon} width={80} height={80}/>
       <div className="flex flex-col gap-[2.5rem] mt-[8rem]">
@@ -19,6 +20,7 @@ export default function ServicePageCard({icon, title, subtitle} : Props) {
             className="font-extrabold text-[1.8rem] h-[6.6rem] rounded-full
                         w-[18.6rem] border-[1px] border-black cursor-pointer hover:opacity-80 duration-200"
             style={{backgroundColor: "rgba(255,255,255,0.5)"}}
+            onClick={onClick}
         >
             Детальніше
         </button>

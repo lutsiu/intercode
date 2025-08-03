@@ -3,6 +3,7 @@ export interface ServicePageItemType {
   title: string;            // title on card and popup
   subtitle: string;         // small text under title on card
   popup: {
+    title: string;
     intro: string;          // short bold/gray intro line
     description: string;    // paragraph under intro
     image: string;          // image shown in popup
