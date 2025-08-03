@@ -1,4 +1,4 @@
-import SectionTitle from "../../../Common/SectionTitle";
+import SectionTitle from "../../Common/SectionTitle";
 
 interface Props {
   title: string;
@@ -7,6 +7,7 @@ interface Props {
 }
 
 export default function PopupTitle({ title, intro, description }: Props) {
+
   return (
     <>
       <SectionTitle title={title} paddingBottom={0} />

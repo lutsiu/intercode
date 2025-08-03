@@ -5,14 +5,15 @@ import PopupImage from "./PopupImage";
 import PopupButton from "./PopupButton";
 import PopupDescription from "./PopupDescription";
 
-interface Props extends ServicePageItemType {
+interface Props {
   item: ServicePageItemType;
   onClose: () => void;
 }
 
-export default function ServicePopup({ onClose, item  }: Props) {
-  const {popup} = item;
-  const {title,intro, description, image, features, finalNote, actionText} = popup;
+export default function ServicePopup({ onClose, item }: Props) {
+  const { popup } = item;
+  const { title, intro, description, image, features, finalNote, actionText } = popup;
+
   return (
     <div 
       className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start justify-center overflow-y-auto"
@@ -21,7 +22,7 @@ export default function ServicePopup({ onClose, item  }: Props) {
       onClick={onClose} 
     >
       <div 
-        className="bg-white rounded-[2.5rem] w-[71%] relative  px-[15rem] py-[8.5rem] flex flex-col gap-[6rem]"
+        className="bg-white rounded-[2.5rem] w-[71%] relative px-[15rem] py-[8.5rem] flex flex-col gap-[6rem]"
         onClick={(e) => e.stopPropagation()}
       >
         <Icon 
@@ -41,7 +42,7 @@ export default function ServicePopup({ onClose, item  }: Props) {
           features={features}
           finalNote={finalNote}
         />
-        <PopupButton actionText={actionText}/>
+        <PopupButton actionText={actionText} />
       </div>
     </div>
   );
