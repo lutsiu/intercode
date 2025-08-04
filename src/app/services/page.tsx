@@ -6,7 +6,7 @@ import ServicePopup from "../components/Services/Popup/Popup";
 import ServicePageCards from "../components/Services/ServicePageCards";
 import { ServicePageItemType } from "../types/ServicePageItemType";
 
-export default function Services() {
+export default function ServicesPage() {
   const [activePopup, setActivePopup] = useState<ServicePageItemType | null>(null);
 
   useEffect(() => {

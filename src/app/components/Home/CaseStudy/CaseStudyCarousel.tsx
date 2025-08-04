@@ -7,6 +7,8 @@ import { useCallback, useEffect, useState } from "react";
 
 export default function CaseStudyCarousel() {
 
+  const AMOUNT_OF_IMAGES_PER_SLIDE = 3;
+
   const [emblaRef, emblaApi] = useEmblaCarousel({loop: false, align: "start", slidesToScroll: 1});
   const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -38,11 +40,10 @@ export default function CaseStudyCarousel() {
       <PrevButton embla={emblaApi} />
       <NextButton embla={emblaApi} />
 
-      {/* Progress Bar */}
       <div className="w-[31.2rem] mt-[9.7rem] mx-auto h-[3px] bg-[#E4E5E5] relative overflow-hidden rounded-full">
         <div
           className="absolute left-0 top-0 h-full bg-blue-600 transition-all duration-1000 rounded-full"
-          style={{ width: `${(selectedIndex + 3) * (100 /  caseStudies.length)}%` }}
+          style={{ width: `${(selectedIndex + AMOUNT_OF_IMAGES_PER_SLIDE) * (100 /  caseStudies.length)}%` }}
         />
       </div>
     </div>
