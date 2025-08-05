@@ -15,7 +15,7 @@ export default function Header() {
           <Link href="/" className="text-[1.8rem] font-normal">Про нас</Link>
           <Link href="/services" className="text-[1.8rem] font-normal">Послуги, які працюють</Link>
           <Link href="/case-studies" className="text-[1.8rem] font-normal">Case Studies</Link>
-          <Link href="/rent-in" className="text-[1.8rem] font-normal">Rent an IT Solution</Link>
+          <Link href="/rent-it" className="text-[1.8rem] font-normal">Rent an IT Solution</Link>
         </div>
         <ContactUsButton/>
       </nav>

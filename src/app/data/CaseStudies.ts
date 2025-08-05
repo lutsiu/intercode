@@ -69,7 +69,7 @@ export const caseStudiesPageCards: CaseStudyPageCardType[] = [
     stack: ["Flutter", "Node.js", "PostgreSQL"],
     results: "-42% навантаження на рецепцію, +70% пацієнтів обирають онлайн-запис",
     image: "/caseStudies/doc-go-big.webp",
-    textColor: "white",
+    textColor: "black",
   }
 ];
 
