@@ -5,6 +5,9 @@ import PlansSection from "../components/RentIt/PlansSection";
 import TemplatesSection from "../components/RentIt/TemplatesSection";
 
 export default function RentItPage() {
+
+  
+
   return (
     <section aria-label="Rent an IT Solution" className="px-[8rem] pt-[7rem] pb-[11rem]">
       <div className="flex flex-col items-center gap-[3rem]">
