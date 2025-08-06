@@ -4,6 +4,7 @@ export interface LaunchPlanType {
   annualPrice?: number;
   description: string;
   features: string[];
+  featuresMarginTop: number;
   popular: boolean;
   period: 'monthly' | 'annual';
 }

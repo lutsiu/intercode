@@ -13,6 +13,7 @@ export const launchPlans: LaunchPlanType[] = [
     ],
     popular: false,
     period: "monthly",
+    featuresMarginTop: 6.9,
   },
   {
     title: "Standard",
@@ -26,6 +27,7 @@ export const launchPlans: LaunchPlanType[] = [
     ],
     popular: true,
     period: "monthly",
+    featuresMarginTop: 4.8,
   },
   {
     title: "Flex",
@@ -39,6 +41,7 @@ export const launchPlans: LaunchPlanType[] = [
     ],
     popular: false,
     period: "monthly",
+    featuresMarginTop: 4.8,
   },
 
   // ANNUAL PLANS
@@ -56,6 +59,7 @@ export const launchPlans: LaunchPlanType[] = [
     ],
     popular: false,
     period: "annual",
+    featuresMarginTop: 2.7,
   },
   {
     title: "Standard",
@@ -67,10 +71,10 @@ export const launchPlans: LaunchPlanType[] = [
       "Мобільна адаптація, SEO-базова",
       "Telegram, e-mail, Instagram",
       "1 редизайн або оновлення контенту протягом року",
-      "Telegram + e-mail + Instagram",
     ],
     popular: true,
     period: "annual",
+    featuresMarginTop: 1.35,
   },
   {
     title: "Flex",
@@ -86,5 +90,6 @@ export const launchPlans: LaunchPlanType[] = [
     ],
     popular: false,
     period: "annual",
+    featuresMarginTop: 2.2,
   },
 ];

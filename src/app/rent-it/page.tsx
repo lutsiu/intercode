@@ -5,7 +5,7 @@ import SectionTitle from "../components/Common/SectionTitle";
 import RentItTemplate from "../components/RentIt/RentItTemplate";
 import PlanButton from "../components/RentIt/PlanButton";
 import { rentItTemplates } from "../data/RentItTemplatesData";
-import PlanCard from "../components/RentIt/PlanCard";
+import PlanCard from "../components/RentIt/PlanCard/PlanCard";
 import { launchPlans } from "../data/LaunchPlanData";
 
 export default function RentItPage() {
@@ -39,10 +39,28 @@ export default function RentItPage() {
           <PlanButton title="Annual plan" isActive={plan === "annual"} onClick={() => setPlan("annual")} />
         </div>
 
-        <div className="flex justify-center gap-[2.8rem]">
-          {launchPlans.slice(3,6).map((lp, i) => {
-            return <PlanCard key={i} {...lp}/>
-          })}
+        <div className="overflow-x-hidden w-full max-w-[122rem] py-[1rem]">
+          <div
+            className="flex transition-transform duration-500 ease-in-out"
+            style={{
+              transform: plan === "monthly" ? "translateX(0%)" : "translateX(-100%)",
+              width: "100%", 
+            }}
+          >
+            {/* Monthly plans */}
+            <div className="flex gap-[2.8rem] w-full justify-center">
+              {launchPlans.slice(0, 3).map((lp, i) => (
+                <PlanCard key={i} {...lp} />
+              ))}
+            </div>
+
+            {/* Annual plans */}
+            <div className="flex gap-[2.8rem] w-full justify-center">
+              {launchPlans.slice(3, 6).map((lp, i) => (
+                <PlanCard key={i + 3} {...lp} />
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
