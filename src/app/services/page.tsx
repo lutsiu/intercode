@@ -15,12 +15,14 @@ export default function ServicesPage() {
   return (
     <section 
       aria-label="Services page" 
-      className="px-[8rem] pt-[7rem] pb-[8rem]"
+      className="px-[1.8rem] sm:px-[4rem] lg:px-[8rem] pt-[4.8rem] lg:pt-[7rem] pb-[1.9rem] sm:pb-[4rem] lg:pb-[8rem]"
     >
-      <SectionTitle title="Послуги, які працюють" paddingBottom={20}/>
-      <h4 className="text-[2.4rem] font-medium text-center">
-        Мінімум “можемо зробити все”. Максимум — що справді потрібно твоєму бізнесу.
-      </h4>
+      <div className="px-[1.6rem] sm:px-[0]">
+        <SectionTitle title="Послуги, які працюють" paddingBottom={20}/>
+        <h4 className="text-[1.4rem] sm:text-[1.9rem] lg:text-[2.4rem] font-medium text-center">
+          Мінімум “можемо зробити все”. Максимум — що справді потрібно твоєму бізнесу.
+        </h4>
+      </div>
 
       <ServicePageCards setActivePopup={setActivePopup} />
 
