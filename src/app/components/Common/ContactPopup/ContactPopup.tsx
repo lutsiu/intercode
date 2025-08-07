@@ -18,7 +18,7 @@ export default function ContactUsPopup() {
       onClick={close}
     >
       <div 
-        className="bg-white rounded-[2.5rem] w-[69.5%] relative px-[12rem] py-[6.8rem] flex flex-col gap-[3.6rem]"
+        className="bg-white rounded-[2.5rem] w-[69.5%] relative px-[12rem] pb-[6.8rem] flex flex-col pt-[10.4rem]"
         onClick={(e) => e.stopPropagation()}
       >
         <Icon 
@@ -31,7 +31,7 @@ export default function ContactUsPopup() {
 
         <SectionTitle title={"Напиши нам — і ми включимось!"} paddingBottom={0} />
 
-        <div className="text-center leading-[2.1rem] text-[#A09F9F]">
+        <div className="text-center leading-[2.1rem] text-[#A09F9F] mt-[3.6rem]">
           <h4 className="text-[1.4rem] font-light">
             Реагуємо швидко. Без спаму. Без менеджерів з шаблонами.
           </h4>

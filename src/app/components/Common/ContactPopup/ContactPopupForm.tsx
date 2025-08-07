@@ -13,7 +13,7 @@ export default function ContactPopupForm() {
   return (
     <form 
       onSubmit={handleSubmit}
-      className="flex flex-col gap-[1.8rem] text-[#A09F9F] px-[7.7rem]"
+      className="flex flex-col gap-[1.8rem] text-[#A09F9F] px-[7.7rem] mt-[3.6rem]"
     >
       <input 
         type="text" 
