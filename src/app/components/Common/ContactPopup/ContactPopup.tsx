@@ -1,17 +1,17 @@
 import { Icon } from "@iconify/react";
 import SectionTitle from "../SectionTitle";
+import { useContactPopupStore } from "@/app/store/contactPopupStore";
 
-interface Props {
-  onClose: () => void;
-}
 
-export default function ContactUsPopup({ onClose }: Props) {
+export default function ContactUsPopup() {
+
+  const close = useContactPopupStore((state) => state.close);
   return (
     <div 
       className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-center justify-center overflow-y-auto"
       role="dialog"
       aria-modal="true"
-      onClick={onClose}
+      onClick={close}
     >
       <div 
         className="bg-white rounded-[2.5rem] w-[69.5%] relative px-[12rem] py-[6.8rem] flex flex-col gap-[3.6rem]"
@@ -22,7 +22,7 @@ export default function ContactUsPopup({ onClose }: Props) {
           width={24}
           height={24}
           className="absolute top-[1.6rem] right-[2.7rem] cursor-pointer"
-          onClick={onClose}
+          onClick={close}
         />
 
         <SectionTitle title={"Напиши нам — і ми включимось!"} paddingBottom={0} />

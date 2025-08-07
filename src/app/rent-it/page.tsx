@@ -1,14 +1,9 @@
 'use client';
 
-import ContactUsPopup from "../components/Common/ContactPopup/ContactPopup";
 import SectionTitle from "../components/Common/SectionTitle";
 import PlansSection from "../components/RentIt/PlansSection";
 import TemplatesSection from "../components/RentIt/TemplatesSection";
-import useLockBodyScroll from "../hooks/useLockBodyScroll";
-
 export default function RentItPage() {
-
-  useLockBodyScroll(true);
 
   return (
     <section aria-label="Rent an IT Solution" className="px-[8rem] pt-[7rem] pb-[11rem]">
@@ -24,7 +19,6 @@ export default function RentItPage() {
       <TemplatesSection />
       <PlansSection />
 
-      <ContactUsPopup onClose={() => {}}/>
     </section>
   );
 }

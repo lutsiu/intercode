@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
-import { Montserrat } from "next/font/google"; // ✅ Add this
+import { Montserrat } from "next/font/google";
 import "./globals.css";
 import Header from "./components/Common/Header";
 import Footer from "./components/Common/Footer/Footer";
+import LayoutClient from "./components/Common/Layout/LayoutClient";
 
-// Existing fonts
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -16,7 +16,6 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-// ✅ Add Montserrat
 const montserrat = Montserrat({
   subsets: ["latin"],
   variable: "--font-montserrat",
@@ -45,7 +44,9 @@ export default function RootLayout({
         `}
       >
         <Header />
-        <main className="flex-1">{children}</main>
+        <main className="flex-1">
+          <LayoutClient>{children}</LayoutClient>
+        </main>
         <Footer />
       </body>
     </html>

@@ -1,13 +1,18 @@
+"use client";
+
+import { useContactPopupStore } from "@/app/store/contactPopupStore";
+import BlackButton from "../../Common/BlackButton";
 
 export default function EstimatedText() {
 
+  const {open} = useContactPopupStore();
+
   return (
     <div className="pt-[31.8rem] pl-[7.4rem]">
-      <p className="text-[3.6rem] font-extrabold leading-[4rem]">Отримай вартість твого проекту <br/> протягом 12 годин!</p>
-      <button className="bg-black text-white font-bold text-[1.8rem] 
-                          py-[2.1rem] px-[3.8rem] h-[6.6rem] rounded-full mt-[3.2rem]">
-        Розрахувати вартість
-      </button>
+      <p className="text-[3.6rem] font-extrabold leading-[4rem] mb-[3.2rem]">
+        Отримай вартість твого проекту <br/> протягом 12 годин!
+      </p>
+      <BlackButton text="Розрахувати вартість" onClick={open}/>
     </div>
   )
 }

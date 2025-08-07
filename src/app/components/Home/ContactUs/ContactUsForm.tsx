@@ -1,5 +1,15 @@
+"use client";
+
+import { useContactPopupStore } from "@/app/store/contactPopupStore";
 
 export default function ContactUsForm() {
+
+  const {open} = useContactPopupStore();
+
+  function onSumbit(e: React.MouseEvent<HTMLButtonElement>) {
+    e.preventDefault();
+    open();
+  }
 
   return (
     <form className="flex flex-col gap-[1.8rem] ">
@@ -39,7 +49,7 @@ export default function ContactUsForm() {
           0/2000
         </span>
       </div>
-      <div>
+      <div className="flex items-center gap-[1.6rem]">
         <input 
           type="text" 
           name="promocode-input"
@@ -52,10 +62,11 @@ export default function ContactUsForm() {
           }}
         />
         <button 
+          onClick={onSumbit}
           type="submit"
           className="
-                    text-[1.8rem] font-bold py-[2.1rem] px-[3.6rem] rounded-full 
-                    h-[6.6rem] w-[30.9rem] text-white bg-black cursor-pointer"
+                    text-[1.8rem] font-bold py-[2.1rem] px-[3.6rem] rounded-full flex items-center justify-center
+                    h-[6.6rem] w-[30.9rem] text-white bg-black cursor-pointer text-nowrap"
         >
           🚀 Почати спільну справу
         </button>
