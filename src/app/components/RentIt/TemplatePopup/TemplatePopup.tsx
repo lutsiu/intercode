@@ -4,6 +4,8 @@ import SectionTitle from "../../Common/SectionTitle";
 import BlackButton from "../../Common/BlackButton";
 import TemplatePopupGallery from "./TemplatePopupGallery";
 import TemplatePopupContent from "./TemplatePopupContent";
+import { useContactPopupStore } from "@/app/store/contactPopupStore";
+import useClosePopupOnEscape from "@/app/hooks/useClosePopupOnEscape";
 
 interface Props {
   item: RentItPopupInfoType;
@@ -12,7 +14,14 @@ interface Props {
 
 export default function TemplatePopup({ item, onClose }: Props) {
   const { id } = item;
+  const {open} = useContactPopupStore();
 
+  function handleOnClick() {
+    onClose();
+    open();
+  }
+
+  useClosePopupOnEscape(onClose);
   return (
     <div 
       className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start justify-center overflow-y-auto"
@@ -40,7 +49,7 @@ export default function TemplatePopup({ item, onClose }: Props) {
         <TemplatePopupContent item={item} />
 
         <div className="w-fit mx-auto">
-          <BlackButton text="🔑 Взяти в оренду" onClick={() => {}} />
+          <BlackButton text="🔑 Взяти в оренду" onClick={handleOnClick} />
         </div>
       </div>
     </div>

@@ -1,12 +1,15 @@
 'use client';
 import { CaseStudyPageCardType } from "@/app/types/CaesStudyType";
 import BlackButton from "../Common/BlackButton";
+import { useContactPopupStore } from "@/app/store/contactPopupStore";
 
 export default function CaseStudyPageCard(
   { client, projectName, task, results, stack, 
     deliverables, image, textColor
 }: CaseStudyPageCardType) {
 
+  const {open} = useContactPopupStore();
+  
   return (
     <article 
       className=
@@ -33,7 +36,7 @@ export default function CaseStudyPageCard(
         <p className="text-[1.6rem] leading-[1.8rem]"><strong>Технології:&nbsp;</strong>{stack.toString()}</p>
         <p className="text-[1.6rem] leading-[1.8rem]"><strong>Результат:&nbsp;</strong>{results}</p>
       </div>
-      <BlackButton text="Хочу так само!" onClick={() => {console.log("")}}/>
+      <BlackButton text="Хочу так само!" onClick={open}/>
     </article>
   )
 }

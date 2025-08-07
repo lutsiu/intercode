@@ -4,6 +4,7 @@ import PopupTitle from "./PopupTitle";
 import PopupImage from "./PopupImage";
 import PopupButton from "./PopupButton";
 import PopupDescription from "./PopupDescription";
+import useClosePopupOnEscape from "@/app/hooks/useClosePopupOnEscape";
 
 interface Props {
   item: ServicePageItemType;
@@ -13,6 +14,7 @@ interface Props {
 export default function ServicePopup({ onClose, item }: Props) {
   const { popup } = item;
   const { title, intro, description, image, features, finalNote, actionText } = popup;
+  useClosePopupOnEscape(onClose);
 
   return (
     <div 
@@ -42,7 +44,7 @@ export default function ServicePopup({ onClose, item }: Props) {
           features={features}
           finalNote={finalNote}
         />
-        <PopupButton actionText={actionText} />
+        <PopupButton onClick={onClose} actionText={actionText} />
       </div>
     </div>
   );
