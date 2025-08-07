@@ -8,35 +8,61 @@ export default function CaseStudyPageCard(
     deliverables, image, textColor
 }: CaseStudyPageCardType) {
 
-  const {open} = useContactPopupStore();
+  const { open } = useContactPopupStore();
   
   return (
     <article 
-      className=
-        {`flex flex-col gap-[4.8rem] text-${textColor}
-          pl-[9.3rem] pt-[6.4rem] pb-[7rem] bg-cover bg-center h-[60rem] `}
+      className={`flex flex-col gap-[4rem] sm:gap-[4.8rem] text-${textColor}
+        text-center md:text-left
+        px-[2rem] sm:px-[5rem] lg:px-[9.3rem] 
+        pt-[4.9rem] lg:pt-[6.4rem] 
+        pb-[4.9rem] lg:pb-[7rem] 
+        bg-cover bg-center h-[64.4rem] sm:h-[60rem] rounded-[3.2rem] md:rounded-[8rem]`}
       style={{
         color: textColor,
         backgroundImage: `url(${image})`,
-  
       }}
     >
-      <h4 className="text-[3.6rem] font-bold">{projectName}</h4>
-      <div className="flex flex-col gap-[2.4rem]">
-        <p className="text-[1.6rem] leading-[1.8rem]"><strong>Клієнт:&nbsp;</strong>{client}</p>
-        <p className="text-[1.6rem] leading-[1.8rem]"><strong>Задача:&nbsp;</strong>{task}</p>
-        <ul className="text-[1.6rem] leading-[1.8rem] flex flex-col gap-[0.5rem]">
+      <h4 className="text-[1.8rem] sm:text-[2.5rem] lg:text-[3.6rem] font-bold">
+        {projectName}
+      </h4>
+
+      <div className="flex flex-col gap-[1.6rem] sm:gap-[2.4rem]">
+        <p className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] leading-[2.1rem] sm:leading-[1.8rem]">
+          <strong>Клієнт:</strong>
+          <br className="block sm:hidden" />
+          &nbsp;{client}
+        </p>
+
+        <p className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] leading-[2.1rem] sm:leading-[1.8rem]">
+          <strong>Задача:</strong>
+          <br className="block sm:hidden" />
+          &nbsp;{task}
+        </p>
+
+        <ul className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] leading-[2.1rem] sm:leading-[1.8rem] flex flex-col gap-[0.5rem]">
           <p><strong>Що зробили:&nbsp;</strong></p>
-          {deliverables.map((d, i) => {
-            return (
-              <li key={i}>{d}</li>
-            )
-          })}
+          {deliverables.map((d, i) => (
+            <li key={i}>{d}</li>
+          ))}
         </ul>
-        <p className="text-[1.6rem] leading-[1.8rem]"><strong>Технології:&nbsp;</strong>{stack.toString()}</p>
-        <p className="text-[1.6rem] leading-[1.8rem]"><strong>Результат:&nbsp;</strong>{results}</p>
+
+        <p className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] leading-[2.1rem] sm:leading-[1.8rem]">
+          <strong>Технології:</strong>
+          <br className="block sm:hidden" />
+          &nbsp;{stack.toString()}
+        </p>
+
+        <p className="text-[1.2rem] sm:text-[1.4rem] lg:text-[1.6rem] leading-[2.1rem] sm:leading-[1.8rem]">
+          <strong>Результат:</strong>
+          <br className="block sm:hidden" />
+          &nbsp;{results}
+        </p>
       </div>
-      <BlackButton text="Хочу так само!" onClick={open}/>
+
+      <div className="mx-auto md:mx-0">
+        <BlackButton text="Хочу так само!" onClick={open} />
+      </div>
     </article>
   )
 }
