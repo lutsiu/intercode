@@ -24,14 +24,20 @@ export default function ServicePopup({ onClose, item }: Props) {
       onClick={onClose} 
     >
       <div 
-        className="bg-white rounded-[2.5rem] w-[71%] relative px-[15rem] py-[8.5rem] flex flex-col gap-[6rem]"
+        className="bg-white rounded-[3.5rem] md:rounded-[2.5rem] relative 
+                     w-[95%] sm:w-[85%] lg:w-[71%] 
+                     px-[2.8rem] md:px-[8rem] xl:px-[15rem] 
+                     py-[3.2rem] md:py-[8.5rem] 
+                     flex flex-col 
+                     gap-[2.4rem] sm:gap-[3rem] lg:gap-[6rem]
+                    "
         onClick={(e) => e.stopPropagation()}
       >
         <Icon 
           icon="clarity:close-line" 
           width={24} 
           height={24}
-          className="absolute top-[2.6rem] right-[3.7rem] cursor-pointer"
+          className="absolute top-[2.4rem] sm:top-[2.6rem] right-[2.4rem] sm:right-[3.7rem] cursor-pointer"
           onClick={onClose}  
         />
         <PopupTitle 
