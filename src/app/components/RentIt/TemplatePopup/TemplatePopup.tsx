@@ -31,14 +31,20 @@ export default function TemplatePopup({ item, onClose }: Props) {
       onClick={onClose}
     >
       <div 
-        className="bg-white rounded-[2.5rem] w-[71%] relative px-[15rem] pt-[8.5rem] pb-[5rem] flex flex-col gap-[6rem]"
+        className="bg-white rounded-[2.5rem] relative
+                    w-[95%] sm:w-[85%] lg:w-[71%]  
+                    px-[2.8rem] sm:px-[4rem] md:px-[8rem] xl:px-[15rem] 
+                    pt-[3.2rem] md:pt-[8.5rem] 
+                    pb-[3.2rem] md:pb-[5rem] 
+                    flex flex-col 
+                    gap-[3.2rem] sm:gap-[4rem] lg:gap-[6rem]"
         onClick={(e) => e.stopPropagation()}
       >
         <Icon 
           icon="clarity:close-line"
           width={24}
           height={24}
-          className="absolute top-[1.6rem] right-[2.7rem] cursor-pointer"
+          className="absolute top-[1.6rem] right-[2.4rem] md:right-[2.7rem] cursor-pointer"
           onClick={onClose}
         />
 
