@@ -13,7 +13,7 @@ export default function TemplatesSection() {
 
   return (
     <>
-      <div className="flex gap-[7.6rem] mt-[6.4rem] justify-center">
+      <div className="flex flex-col md:flex-row lg:gap-[7.6rem] mt-[3.2rem] sm:mt-[5.5rem] lg:mt-[6.4rem] justify-center">
         {rentItTemplates.map((r, i) => (
           <RentItTemplate 
             key={i} 
