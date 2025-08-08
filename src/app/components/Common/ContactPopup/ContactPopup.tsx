@@ -18,24 +18,32 @@ export default function ContactUsPopup() {
       onClick={close}
     >
       <div 
-        className="bg-white rounded-[2.5rem] w-[69.5%] relative px-[12rem] pb-[6.8rem] flex flex-col pt-[10.4rem]"
+        className="bg-white rounded-[2.5rem] relative
+                    w-[95%] sm:w-[85%] xl:w-[69.5%]  
+                    px-[2.4rem] sm:px-[4rem] md:px-[8rem] xl:px-[12rem] 
+                    pb-[3.2rem] sm:pb-[4rem] lg:pb-[6.8rem] 
+                    pt-[3.2rem] sm:pt-[5rem] xl:pt-[10.4rem]
+                    flex flex-col "
         onClick={(e) => e.stopPropagation()}
       >
         <Icon 
           icon="clarity:close-line"
           width={24}
           height={24}
-          className="absolute top-[1.6rem] right-[2.7rem] cursor-pointer"
+          className="absolute top-[2.4rem] right-[2.4rem] cursor-pointer"
           onClick={close}
         />
 
-        <SectionTitle title={"Напиши нам — і ми включимось!"} paddingBottom={0} />
+        <div className="max-w-[30.8rem] sm:max-w-full mx-auto">
+          <SectionTitle title={"Напиши нам — і ми включимось!"} paddingBottom={0} />
+        </div>
 
-        <div className="text-center leading-[2.1rem] text-[#A09F9F] mt-[3.6rem]">
-          <h4 className="text-[1.4rem] font-light">
+        <div className="max-w-[30.8rem] sm:max-w-full mx-auto text-center leading-[2.1rem] text-black md:text-[#A09F9F]
+                        mt-[2.4rem] md:mt-[3.6rem]">
+          <h4 className="text-[1.4rem] font-medium lg:font-light leading-[2.4rem] md:leading-[2.1rem]">
             Реагуємо швидко. Без спаму. Без менеджерів з шаблонами.
           </h4>
-          <h4 className="text-[1.4rem] font-light">
+          <h4 className="text-[1.4rem] font-medium lg:font-light leading-[2.4rem] md:leading-[2.1rem]">
             Заповни коротку форму — і ми все скажемо по-людськи.
           </h4>
         </div>
