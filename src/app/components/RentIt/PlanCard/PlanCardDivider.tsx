@@ -3,7 +3,7 @@ export default function PlanCardDivider({ popular }: { popular: boolean }) {
     <div
       className={`
         ${popular ? "bg-white" : "bg-[#D4D2E3]"}
-        w-[30.8rem] h-[1px] mx-auto mt-[1rem]
+         min-w-[24.4rem] sm:min-w-[30.8rem] h-[1px] mx-auto mt-[1rem]
       `}
     />
   );

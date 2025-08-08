@@ -27,7 +27,7 @@ export default function PlanSlider({ plan }: { plan: PlanType }) {
   }, [plan, emblaApi]);
 
   const renderGroup = (items: typeof launchPlans) =>
-    items.map((lp, i) => <PlanCard key={i} {...lp} />);
+    items.map((lp, i) => <PlanCard key={i} card={lp} period={plan} />);
 
   return (
     <div className="w-full">
@@ -63,7 +63,7 @@ export default function PlanSlider({ plan }: { plan: PlanType }) {
               <div key={i} className="flex-[0_0_100%] px-[1rem] snap-center">
                 <div className="flex justify-center">
                   <div className="w-full max-w-[36rem]">
-                    <PlanCard {...lp} />
+                    <PlanCard card={lp} period={plan} />
                   </div>
                 </div>
               </div>
