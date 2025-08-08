@@ -12,7 +12,12 @@ export default function PlanCard(props: LaunchPlanType) {
   return (
     <article
       className={`
-        px-[4rem] pt-[4.8rem] pb-[5.6rem] h-[66.7rem] max-w-[38.8rem] border-[1px] rounded-[3rem]
+        px-[4rem] 
+        pt-[4.8rem] 
+        pb-[5.6rem] 
+        min-h-[49.3rem] max-h-[49.3rem] sm:max-h-[66.7rem] sm:min-h-[66.7rem] 
+        max-w-[30.8rem] sm:max-w-[38.8rem] w-full 
+        flex-1  border-[1px] rounded-[3rem]
         flex flex-col shadow-[0px_4px_4px_rgba(0,0,0,0.15)]
         ${popular
           ? "bg-gradient-to-b from-[#9BC3FF] to-[#186AE5] text-white"

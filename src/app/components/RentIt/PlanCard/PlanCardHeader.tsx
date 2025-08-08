@@ -8,11 +8,11 @@ export default function PlanCardHeader({
   popular,
 }: LaunchPlanType) {
   return (
-    <div className="h-[20.8rem] flex flex-col">
+    <div className="sm:h-[20.8rem] flex flex-col">
       <div className="flex">
-        <h4 className="text-[2.8rem] font-bold">{title}</h4>
+        <h4 className="text-[2.4rem] sm:text-[2.8rem] font-bold">{title}</h4>
         {popular && (
-          <span className="ml-auto flex items-center justify-center bg-white w-[10.8rem] h-[4.6rem]
+          <span className="ml-auto flex items-center justify-center bg-white max-w-[10.8rem] h-[4.6rem]
                           text-black rounded-full px-[2.2rem] py-[1.4rem] text-[1.6rem]">
             Popular
           </span>

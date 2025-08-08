@@ -9,7 +9,7 @@ export default function RentItPage() {
     <section
        aria-label="Rent an IT Solution" 
       className="
-        px-[1.8rem] sm:px-[4rem] lg:px-[8rem]
+        px-[3.3rem] sm:px-[4rem] lg:px-[8rem]
         pt-[4.8rem] lg:pt-[7rem] 
         pb-[3.9rem] sm:pb-[5rem] lg:pb-[11rem]"
     >
