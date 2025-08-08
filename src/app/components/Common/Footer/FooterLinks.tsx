@@ -3,7 +3,10 @@ export default function FooterLinks() {
 
   return (
     <nav aria-label="Footer navigation">
-      <ul  className="flex gap-[3.3rem]  text-[1.8rem] mt-[0.5rem]">
+      <ul  className="flex flex-wrap md:flex-nowrap text-nowrap gap-[2.1rem] lg:gap-[3.3rem]
+                      justify-center
+                      text-[1.2rem] sm:text-[1.6rem] lg:text-[1.8rem]
+                      mt-[3.2rem] 2xl:mt-[0.5rem]">
         <li>
           <Link href="/about">Про нас</Link>
         </li>

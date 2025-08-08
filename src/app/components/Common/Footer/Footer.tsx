@@ -14,8 +14,10 @@ export default function Footer() {
   const textColor = isMainPage ? "white" : "black";
 
   return (
-    <footer className={`${bgColor} text-${textColor} px-[10rem] pt-[7.2rem] pb-[5.8rem]`}>
-      <div className="flex justify-between items-center">
+    <footer className={`${bgColor} text-${textColor} px-[3.4rem] lg:px-[6rem]  2xl:px-[10rem]
+                        pt-[3.4rem] lg:pt-[7.2rem] 
+                        pb-[1.4rem] lg:pb-[5.8rem]`}>
+      <div className="flex flex-col  2xl:flex-row justify-between items-center">
         <FooterLogo />
         <FooterLinks />
         <FooterSocials />
