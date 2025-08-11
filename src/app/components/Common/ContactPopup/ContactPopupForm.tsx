@@ -56,13 +56,13 @@ export default function ContactPopupForm() {
           className="text-[1.6rem] placeholder-[#A09F9F] text-[#A09F9F]
             py-[1.2rem] md:py-[1.5rem] px-[1.5rem] md:px-[3.6rem] rounded-full border-[2px] outline-none 
             h-[5.6rem] lg:h-[6.6rem] 
-            w-full lg:w-[46%]"
+            w-full lg:w-[55%]"
             style={{borderColor: "rgba(160,159,159,0.3)"}}
         />
         <button 
           type="submit"
           className="text-[1.8rem] font-bold py-[2.1rem] px-[1.5rem] md:px-[3.6rem] rounded-full 
-            h-[6.6rem] w-full lg:w-[54%] text-white bg-black cursor-pointer text-nowrap"
+            h-[6.6rem] w-full lg:w-[45%] text-white bg-black cursor-pointer text-nowrap"
         >
           🚀 Почати спільну справу
         </button>
