@@ -4,7 +4,7 @@ import IndustryCard from "@/app/components/Home/Industries/IndustryCard";
 
 export default function Industries() {
   return (
-    <section aria-label="Industries" className="pt-[12rem] px-[0.7rem] sm:px-[8rem]">
+    <section aria-label="Industries" className="pt-[4rem] lg:pt-[12rem] px-[0.7rem] sm:px-[3.4rem] lg:px-[6rem]  2xl:px-[8rem]">
       <div className="pb-[3.2rem] md:pb-[6rem]">
         <div className="hidden sm:block">
           <SectionTitle title="Індустрії, з якими ми працюємо" paddingBottom={0} />

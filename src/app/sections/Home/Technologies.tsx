@@ -1,24 +1,47 @@
 import SectionTitle from "@/app/components/Common/SectionTitle";
+import TechnologyCard from "@/app/components/Home/Technologies/TechnologyCard";
 import technologies from "@/app/data/TechnologiesData";
-import Image from "next/image";
 
 export default function Technologies() {
   return (
     <section
       aria-label="Technologies"
-      className="pt-[12rem] px-[8rem]"
+      className="pt-[12rem] px-[3.4rem] lg:px-[6rem] 2xl:px-[8rem]"
     >
-      <SectionTitle title="Технології, з якими ми працюємо" paddingBottom={60} />
-      <ul className="flex justify-center gap-[10rem]">
+      <div className="hidden sm:block pb-[3.2rem] lg:pb-[4rem]">
+        <SectionTitle title="Технології, з якими ми працюємо" paddingBottom={0} />
+      </div>
+      <div className="block sm:hidden pb-[3.2rem] lg:pb-[4rem]">
+        <SectionTitle title="Технології," paddingBottom={0} />
+        <SectionTitle title="з якими ми працюємо" paddingBottom={0} />
+      </div>
+
+      <ul className="hidden lg:flex justify-center lg:gap-[6.4rem]">
         {technologies.map((t, i) => {
           return (
-          <li key={i} className="flex flex-col gap-[2rem] items-center justify-center">
-            <Image src={t.icon} alt={t.title} height={80} width={80} />
-            <p className="font-medium text-[2.4rem] text-center">{t.title}</p>
-          </li>
+          <TechnologyCard key={i} {...t}/>
         )
         })}
       </ul>
+      
+      <div>
+        <ul className="lg:hidden flex justify-center gap-[1rem]">
+          {technologies.slice(0,3).map((t, i) => {
+            return (
+              <TechnologyCard key={i} {...t}/>
+            )
+            })}
+        </ul>
+        <ul className="lg:hidden flex justify-center gap-[1rem]">
+          {technologies.slice(3,5).map((t, i) => {
+            return (
+              <TechnologyCard key={i} {...t}/>
+            )
+            })}
+        </ul>
+      </div>
+      
+
     </section>
   );
 }
