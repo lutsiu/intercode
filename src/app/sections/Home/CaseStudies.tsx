@@ -7,10 +7,13 @@ export default function CaseStudies() {
   return (
     <section
       aria-label="Case studies"
-      className="pt-[11rem] px-[8rem] "
+      className="pt-[7.2rem] lg:pt-[11rem] px-[3.4rem] lg:px-[6rem] xl:px-[8rem]"
     >
       <SectionTitle title="Case studies" paddingBottom={30} />
-      <h5 className="font-medium text-[2.4rem] text-center">Менше слів — більше кейсів. Результати — найкращий аргумент</h5>
+      <h5 className="font-medium text-[1.4rem] sm:text-[2.4rem] 
+                    text-center leading-[3.2rem] sm:leading-[2.4rem]">
+          Менше слів — більше кейсів. <br className="sm:hidden"/> Результати — найкращий аргумент
+      </h5>
       <CaseStudyCarousel/>
       
     </section>

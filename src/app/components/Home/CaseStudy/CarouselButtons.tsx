@@ -3,12 +3,13 @@ import { Icon } from "@iconify/react";
 export function PrevButton({ embla }: { embla: any }) {
   return (
     <button
-      className="absolute left-[-3.7rem] top-[8.8rem] transform  border-[1px]
-                 flex items-center justify-start rounded-full cursor-pointer"
+      className="absolute left-[-2.7rem] lg:left-[-3.7rem] md:top-[10rem] lg:top-[8.8rem] transform  border-[1px]
+                 hidden md:flex items-center justify-center rounded-full cursor-pointer w-[3.6rem] h-[3.6rem]"
       style={{borderColor: 'rgba(0,0,0,0.5)'}}
       onClick={() => embla && embla.scrollPrev()}
     >
-      <Icon icon={"mdi-light:chevron-left"} width={36} height={36}/>
+      <Icon icon={"mdi-light:chevron-left"} 
+            className="w-[2.4rem] h-[2.4rem]"/>
     </button>
   );
 }
@@ -16,12 +17,13 @@ export function PrevButton({ embla }: { embla: any }) {
 export function NextButton({ embla }: { embla: any }) {
   return (
     <button
-      className="absolute right-[-3.7rem] top-[8.8rem] transform  border-[1px] 
-                 flex items-center justify-end rounded-full cursor-pointer"
+      className="absolute right-[-2.7rem] lg:right-[-3.7rem] md:top-[10rem] lg:top-[8.8rem] transform  border-[1px] 
+                 hidden md:flex items-center justify-center rounded-full cursor-pointer w-[3.6rem] h-[3.6rem]"
       style={{borderColor: 'rgba(0,0,0,0.5)'}}
       onClick={() => embla && embla.scrollNext()}
     >
-      <Icon icon={"mdi-light:chevron-right"} width={36} height={36}/>
+      <Icon icon={"mdi-light:chevron-right"} 
+            className="w-[2.4rem] h-[2.4rem]"/>
     </button>
   );
 }
