@@ -6,7 +6,7 @@ export default function Technologies() {
   return (
     <section
       aria-label="Technologies"
-      className="pt-[12rem] px-[3.4rem] lg:px-[6rem] 2xl:px-[8rem]"
+      className="pt-[6.4rem] lg:pt-[12rem] px-[3.4rem] lg:px-[6rem] 2xl:px-[8rem]"
     >
       <div className="hidden sm:block pb-[3.2rem] lg:pb-[4rem]">
         <SectionTitle title="Технології, з якими ми працюємо" paddingBottom={0} />

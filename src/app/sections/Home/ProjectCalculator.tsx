@@ -6,9 +6,12 @@ export default function ProjectCalculator() {
   return (
     <section
       aria-label="Project's calculator"
-      className="pt-[15rem] px-[12rem]"
+      className="pt-[6.4rem] lg:pt-[15rem] px-[3.4rem] lg:px-[6rem] 2xl:px-[12rem]"
     >
-      <SectionTitle title="Калькулятор проекту" paddingBottom={40} />
+      
+      <div className="pb-[3.2rem] lg:pb-[4rem]">
+        <SectionTitle title="Калькулятор проекту" paddingBottom={0} />
+      </div>
       <Estimator/>    
     </section>
   );
