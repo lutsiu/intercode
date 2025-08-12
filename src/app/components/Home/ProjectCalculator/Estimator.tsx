@@ -10,7 +10,7 @@ export default function Estimator() {
       <div
         className="
           lg:hidden flex flex-col items-center
-          mx-auto w-full h-[47.2rem] lg:h-[60rem] rounded-[3rem]
+          mx-auto w-[30.8rem] sm:w-full h-[47.2rem] lg:h-[60rem] rounded-[3rem]
           bg-gradient-to-b from-[#B9EDFF] to-[#2C95E0]
           pt-[1.4rem]
           px-[1.6rem] sm:px-0
