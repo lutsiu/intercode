@@ -6,7 +6,10 @@ export default function BurgerMenu() {
 
   return (
     <menu 
-      className="absolute top-[10.1rem] left-0 z-[1000] rounded-[3rem]"
+      className="absolute top-[10.1rem] left-0 z-[1000]
+                 rounded-[3rem] min-w-[27rem]
+                 PX-[]
+                "
       style={{backgroundColor: "rgba(255,255,255, 0.9)"}}
     >
       <div className="absolute top-[1rem] right-[2rem]">
