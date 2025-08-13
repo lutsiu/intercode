@@ -62,9 +62,9 @@ export default function CaseStudyCarousel() {
         </div>
       </div>
 
-      <PrevButton embla={emblaApi} />
+      <PrevButton embla={emblaApi!} />
   
-      <NextButton embla={emblaApi} />
+      <NextButton embla={emblaApi!} />
 
       {/* progress bar uses dynamic perView */}
       <div className="w-[20.2rem] sm:w-[31.2rem] mt-[6.4rem] lg:mt-[9.7rem] mx-auto h-[3px] bg-[#E4E5E5] relative overflow-hidden rounded-full">
