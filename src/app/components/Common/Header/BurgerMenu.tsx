@@ -40,7 +40,7 @@ export default function BurgerMenu({ setOpenMenu, openMenu }: Props) {
         openMenu ? "opacity-100 translate-y-0 pointer-events-auto"
                  : "opacity-0 -translate-y-2 pointer-events-none",
       ].join(" ")}
-      style={{ backgroundColor: "rgba(255,255,255,0.9)" }}
+      style={{ backgroundColor: "rgba(255,255,255,1)" }}
     >
       <button className="absolute top-[2.4rem] right-[2.4rem]" onClick={close}>
         <Icon icon="material-symbols-light:close" className="w-[3rem] h-[3rem]" />

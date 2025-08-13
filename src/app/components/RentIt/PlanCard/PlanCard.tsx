@@ -12,6 +12,7 @@ export default function PlanCard({card, period}: {card:LaunchPlanType, period: "
   return (
     <article
       className={`
+        mx-auto
         px-[3.2rem] sm:px-[4rem] 
         pt-[3.1rem] sm:pt-[4.8rem] 
         pb-[3.2rem] sm:pb-[5.6rem] 

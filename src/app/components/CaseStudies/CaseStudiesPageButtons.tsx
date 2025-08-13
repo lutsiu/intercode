@@ -1,21 +1,32 @@
 import { Icon } from "@iconify/react";
+import type { EmblaCarouselType } from "embla-carousel";
 
-export function PrevButton({ embla }: { embla: any }) {
+type ArrowProps = {
+  embla?: EmblaCarouselType; 
+};
+
+export function PrevButton({ embla }: ArrowProps) {
+  const disabled = !embla;
   return (
     <button
-      className="hidden md:block border border-black/50 p-[0.8rem] rounded-full hover:bg-black/10 transition cursor-pointer"
-      onClick={() => embla && embla.scrollPrev()}
+      type="button"
+      disabled={disabled}
+      className="hidden md:block border border-black/50 p-[0.8rem] rounded-full hover:bg-black/10 disabled:opacity-50 disabled:cursor-not-allowed transition cursor-pointer"
+      onClick={() => embla?.scrollPrev()}
     >
       <Icon icon="mdi-light:chevron-left" width={36} height={36} />
     </button>
   );
 }
 
-export function NextButton({ embla }: { embla: any }) {
+export function NextButton({ embla }: ArrowProps) {
+  const disabled = !embla;
   return (
     <button
-      className="hidden md:block border border-black/50 p-[0.8rem] rounded-full hover:bg-black/10 transition cursor-pointer"
-      onClick={() => embla && embla.scrollNext()}
+      type="button"
+      disabled={disabled}
+      className="hidden md:block border border-black/50 p-[0.8rem] rounded-full hover:bg-black/10 disabled:opacity-50 disabled:cursor-not-allowed transition cursor-pointer"
+      onClick={() => embla?.scrollNext()}
     >
       <Icon icon="mdi-light:chevron-right" width={36} height={36} />
     </button>

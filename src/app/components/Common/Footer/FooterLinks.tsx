@@ -17,7 +17,7 @@ export default function FooterLinks() {
           <Link href="/case-studies">Case Studies</Link>
         </li>
         <li>
-          <Link href="/rent-in">Rent an IT Solution</Link>
+          <Link href="/rent-it">Rent an IT Solution</Link>
         </li>
       </ul>
     </nav>
