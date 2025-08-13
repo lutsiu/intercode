@@ -7,7 +7,7 @@ export default function EstimatedText() {
   const {open} = useContactPopupStore();
 
   return (
-    <div className="mt-[2rem] lg:mt-[19.3rem] flex flex-col items-center sm:items-start">
+    <div className="mt-[2rem] lg:mt-[19.3rem] flex flex-col items-center lg:items-start">
       <p className="text-[2.4rem] lg:text-[2.85rem] 2xl:text-[3.6rem] font-extrabold
                     leading-[2.4rem] lg:leading-[4rem] 
                     text-center lg:text-left
