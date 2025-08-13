@@ -15,7 +15,7 @@ export default function HeaderDesktop({bgColor}: {bgColor: string}) {
           src={logo} 
           alt="Logo"
           className="lg:w-[20rem] 2xl:w-[26.4rem]
-                     lg:h-[3.5rem]  2xl:h-[3.9]
+                     lg:h-[3.5rem]  2xl:h-[3.9rem]
                     " 
           width={264} height={39} 
          />
