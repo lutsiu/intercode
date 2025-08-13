@@ -2,20 +2,22 @@ import { Icon } from "@iconify/react";
 import Image from "next/image";
 import callImage from "../../../../../public/contact-us-icon.svg";
 import logo from "../../../../../public/Logo.svg";
-import { useContactPopupStore } from "@/app/store/contactPopupStore";
+import BurgerMenu from "./BurgerMenu";
+import { useState } from "react";
 export default function HeaderMobile() {
 
-  const {open} = useContactPopupStore();
+  const [openMenu, setOpenMenu] = useState<boolean>(false);
 
   return (
     <header
       className={`lg:hidden flex items-center
+                  relative
                   justify-between
                 bg-[#8CD1F5] w-full
                   px-[2.6rem] sm:px-[4.4rem] py-[0.8rem] sm:py-[1.8rem]
       `}   
     >
-      <div>
+      <div onClick={() => setOpenMenu((p) => !p)}>
         <Icon
           icon={"iconamoon:menu-burger-horizontal"}
           className="mt-[0.5rem] w-[2.4rem] sm:w-[4rem] h-[2.4rem] sm:h-[4rem] text-white"
@@ -33,7 +35,7 @@ export default function HeaderMobile() {
       </div>
 
       <div
-        onClick={open}
+        
       >
         <Image
           src={callImage}
@@ -43,6 +45,7 @@ export default function HeaderMobile() {
           className="w-[3.2rem] sm:w-[4rem] h-[3.2rem] sm:h-[4rem]"
         />
       </div>
+      <BurgerMenu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
     </header>
   )
 }
