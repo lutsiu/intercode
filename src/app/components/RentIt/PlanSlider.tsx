@@ -34,14 +34,10 @@ export default function PlanSlider({ plan }: { plan: PlanType }) {
     emblaApi.on("resize", onSelect);
     onSelect();
     return () => {
-      // optional cleanup if you want:
-      // emblaApi.off("select", onSelect);
-      // emblaApi.off("reInit", onSelect);
-      // emblaApi.off("resize", onSelect);
+
     };
   }, [emblaApi, onSelect]);
 
-  // Reset to first slide when plan changes (mobile)
   useEffect(() => {
     if (!emblaApi) return;
     emblaApi.reInit();
@@ -54,7 +50,7 @@ export default function PlanSlider({ plan }: { plan: PlanType }) {
   return (
     <div className="w-full">
       {/* 2xl+ — horizontal slider (unchanged) */}
-      <div className="hidden 2xl:block overflow-x-hidden w-full max-w-[122rem] py-[1rem] mx-auto">
+      <div className="hidden 2xl:block overflow-x-hidden w-full max-w-[122rem] py-[1rem] mx-auto ">
         <div
           className="flex transition-transform duration-500 ease-in-out will-change-transform"
           style={{ transform: plan === "monthly" ? "translateX(0%)" : "translateX(-100%)" }}

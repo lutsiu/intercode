@@ -19,7 +19,7 @@ export default function ContactUsPopup() {
     >
       <div 
         className="bg-white rounded-[2.5rem] relative
-                    w-[95%] sm:w-[85%] xl:w-[69.5%]  
+                    w-[90%] sm:w-[85%] xl:w-[69.5%]  
                     px-[2.4rem] sm:px-[4rem] md:px-[8rem] xl:px-[12rem] 
                     pb-[3.2rem] sm:pb-[4rem] lg:pb-[6.8rem] 
                     pt-[3.2rem] sm:pt-[5rem] xl:pt-[10.4rem]

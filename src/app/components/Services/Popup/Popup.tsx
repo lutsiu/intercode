@@ -18,14 +18,14 @@ export default function ServicePopup({ onClose, item }: Props) {
 
   return (
     <div 
-      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start justify-center overflow-y-auto"
+      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-center justify-center overflow-y-auto"
       role="dialog"
       aria-modal="true"
       onClick={onClose} 
     >
       <div 
         className="bg-white rounded-[3.5rem] md:rounded-[2.5rem] relative 
-                     w-[95%] sm:w-[85%] lg:w-[71%] 
+                     w-[90%] sm:w-[85%] lg:w-[71%] 
                      px-[2.8rem] md:px-[8rem] xl:px-[15rem] 
                      py-[3.2rem] md:py-[8.5rem] 
                      flex flex-col 

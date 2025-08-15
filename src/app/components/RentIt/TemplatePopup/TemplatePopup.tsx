@@ -26,7 +26,7 @@ export default function TemplatePopup({ item, onClose }: Props) {
   useClosePopupOnEscape(onClose);
   return (
     <div 
-      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start justify-center overflow-y-auto"
+      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-center justify-center overflow-y-auto"
       role="dialog"
       aria-modal="true"
       id={id}
@@ -34,7 +34,7 @@ export default function TemplatePopup({ item, onClose }: Props) {
     >
       <div 
         className="bg-white rounded-[2.5rem] relative
-                    w-[95%] sm:w-[85%] lg:w-[71%]  
+                    w-[90%] sm:w-[85%] lg:w-[71%]  
                     px-[2.8rem] sm:px-[4rem] md:px-[8rem] xl:px-[15rem] 
                     pt-[3.2rem] md:pt-[8.5rem] 
                     pb-[3.2rem] md:pb-[5rem] 
