@@ -18,6 +18,7 @@ export default function HeaderDesktop({bgColor}: {bgColor: string}) {
                      lg:h-[3.5rem]  2xl:h-[3.9rem]
                     " 
           width={264} height={39} 
+          priority={true}
          />
       </Link>
 

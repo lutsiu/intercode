@@ -31,6 +31,7 @@ export default function HeaderMobile() {
           width={200}
           height={30}
           className="w-[20rem] sm:w-[30rem] h-[2.5rem] sm:h-[4rem]"
+          priority={true}
         />
       </div>
 

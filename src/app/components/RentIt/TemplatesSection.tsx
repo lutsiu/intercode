@@ -8,7 +8,8 @@ import useLockBodyScroll from "@/app/hooks/useLockBodyScroll";
 
 export default function TemplatesSection() {
   const [activePopup, setActivePopup] = useState<RentItPopupInfoType | null>(null);
-  
+
+
   useLockBodyScroll(!!activePopup);
 
   return (
