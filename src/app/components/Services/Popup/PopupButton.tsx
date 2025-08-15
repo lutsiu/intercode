@@ -1,22 +1,24 @@
-import { useContactPopupStore } from "@/app/store/contactPopupStore";
+"use client";
+
 import BlackButton from "../../Common/BlackButton";
+import { useRouter } from "next/navigation";
 
 interface Props {
   actionText: string;
-  onClick: () => void;
+  onClick?: () => void;
 }
-export default function PopupButton({actionText, onClick}: Props) {
 
-  const {open} = useContactPopupStore();
+export default function PopupButton({ actionText, onClick }: Props) {
+  const router = useRouter();
 
-  function handleClick() {
-    onClick();
-    open();
-  }
+  const handleClick = () => {
+    onClick?.();
+    router.push("/contact");
+  };
 
   return (
     <div className="mx-auto">
-      <BlackButton onClick={handleClick} text={actionText}/>
+      <BlackButton onClick={handleClick} text={actionText} />
     </div>
-  )
+  );
 }

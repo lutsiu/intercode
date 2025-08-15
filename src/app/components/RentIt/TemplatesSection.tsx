@@ -1,3 +1,4 @@
+// TemplatesSection.tsx
 import { useState } from "react";
 import RentItTemplate from "./RentItTemplate";
 import { rentItTemplates } from "@/app/data/RentItTemplatesData";
@@ -8,26 +9,22 @@ import useLockBodyScroll from "@/app/hooks/useLockBodyScroll";
 
 export default function TemplatesSection() {
   const [activePopup, setActivePopup] = useState<RentItPopupInfoType | null>(null);
-
-
   useLockBodyScroll(!!activePopup);
 
   return (
     <>
-      <div className="flex flex-col md:flex-row lg:gap-[7.6rem] mt-[3.2rem] sm:mt-[5.5rem] lg:mt-[6.4rem] justify-center">
+      <div className="mt-[3.2rem] sm:mt-[5.5rem] lg:mt-[6.4rem]
+                      grid grid-cols-1 lg:grid-cols-3
+                      gap-[3.2rem] lg:gap-[7.6rem] justify-items-center">
         {rentItTemplates.map((r, i) => (
-          <RentItTemplate 
-            key={i} 
-            item={r}
-            onClick={() => setActivePopup(rentItPopups[i])} />
+          <div key={i} className="w-full max-w-[36rem]">
+            <RentItTemplate item={r} onClick={() => setActivePopup(rentItPopups[i])} />
+          </div>
         ))}
       </div>
 
       {activePopup && (
-        <TemplatePopup
-          item={activePopup}
-          onClose={() => setActivePopup(null)}
-        />
+        <TemplatePopup item={activePopup} onClose={() => setActivePopup(null)} />
       )}
     </>
   );

@@ -50,12 +50,15 @@ export default function LanguageSwitcher() {
       >
         {LANGUAGE_OPTIONS.map((l, i) => {
           return (
-            <li key={i} className="flex gap-[0.6rem]">
+            <li 
+              key={i} 
+              className="flex gap-[0.6rem]"
+              onClick={() => (setLanguage(l))}
+            >
               <span className="text-[2rem]">{l.flag}</span>
               <span className={`text-[1.6rem] mt-[0.25rem] 
                               ${language.code === l.code ?
                                "font-bold text-blue-500" : 'font-normal text-black'}`}
-                    onClick={() => (setLanguage(l))}
               >
                 {l.label}
               </span>

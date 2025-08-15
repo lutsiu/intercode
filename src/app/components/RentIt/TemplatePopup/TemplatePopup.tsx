@@ -1,11 +1,13 @@
+"use client";
+
 import { RentItPopupInfoType } from "@/app/types/RentItPopupInfoType";
 import { Icon } from "@iconify/react";
 import SectionTitle from "../../Common/SectionTitle";
 import BlackButton from "../../Common/BlackButton";
 import TemplatePopupGallery from "./TemplatePopupGallery";
 import TemplatePopupContent from "./TemplatePopupContent";
-import { useContactPopupStore } from "@/app/store/contactPopupStore";
 import useClosePopupOnEscape from "@/app/hooks/useClosePopupOnEscape";
+import { useRouter } from "next/navigation";
 
 interface Props {
   item: RentItPopupInfoType;
@@ -14,13 +16,13 @@ interface Props {
 
 export default function TemplatePopup({ item, onClose }: Props) {
   const { id } = item;
-  const {open} = useContactPopupStore();
-
-  function handleOnClick() {
-    onClose();
-    open();
-  }
-
+  
+  const router = useRouter();
+  
+  const handleClick = () => {
+    onClose?.();
+    router.push("/contact");
+  };
   useClosePopupOnEscape(onClose);
   return (
     <div 
@@ -55,7 +57,7 @@ export default function TemplatePopup({ item, onClose }: Props) {
         <TemplatePopupContent item={item} />
 
         <div className="w-fit mx-auto">
-          <BlackButton text="🔑 Взяти в оренду" onClick={handleOnClick} />
+          <BlackButton text="🔑 Взяти в оренду" onClick={handleClick} />
         </div>
       </div>
     </div>
