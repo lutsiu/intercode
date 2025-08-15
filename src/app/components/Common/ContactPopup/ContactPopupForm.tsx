@@ -1,7 +1,11 @@
 import { useContactPopupStore } from "@/app/store/contactPopupStore"
 import { FormEvent } from "react";
 
-export default function ContactPopupForm() {
+interface Props {
+  containerPx: boolean;
+}
+
+export default function ContactForm({containerPx}: Props) {
 
   const {close} = useContactPopupStore();
 
@@ -13,7 +17,11 @@ export default function ContactPopupForm() {
   return (
     <form 
       onSubmit={handleSubmit}
-      className="flex flex-col gap-[1.8rem] text-[#A09F9F] sm:px-[2rem] md:px-[5.5rem] xl:px-[7.7rem] mt-[2.4rem] md:mt-[3.6rem]"
+      className={`
+        flex flex-col gap-[1.8rem] text-[#A09F9F]
+        ${containerPx? "sm:px-[2rem] md:px-[5.5rem] xl:px-[7.7rem]" : ""} 
+        mt-[2.4rem] md:mt-[3.6rem] 
+      `}
     >
       <input 
         type="text" 
@@ -61,8 +69,10 @@ export default function ContactPopupForm() {
         />
         <button 
           type="submit"
-          className="text-[1.8rem] font-bold py-[2.1rem] px-[1.5rem] md:px-[3.6rem] rounded-full 
-            h-[6.6rem] w-full lg:w-[45%] text-white bg-black cursor-pointer text-nowrap"
+          className="text-[1.8rem] lg:text-[1.4rem] xl:text-[1.8rem] font-bold py-[2.1rem] px-[1.5rem] md:px-[3.6rem] rounded-full 
+            h-[6.6rem] w-full lg:w-[45%] text-white bg-black cursor-pointer text-nowrap
+            flex justify-center items-center
+            "
         >
           🚀 Почати спільну справу
         </button>
