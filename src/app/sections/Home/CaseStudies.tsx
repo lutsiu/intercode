@@ -2,7 +2,11 @@
 
 import SectionTitle from "@/app/components/Common/SectionTitle";
 import CaseStudyCarousel from "@/app/components/Home/CaseStudy/CaseStudyCarousel";
+import CaseStudyGallery from "@/app/components/Home/CaseStudy/CaseStudyGallery/CaseStudyGallery";
+import { useCaseStudyGalleryStore } from "@/app/store/caseStudyGalleryStore";
 export default function CaseStudies() {
+
+  const {isOpen} = useCaseStudyGalleryStore();
 
   return (
     <section
@@ -15,7 +19,7 @@ export default function CaseStudies() {
           Менше слів — більше кейсів. <br className="sm:hidden"/> Результати — найкращий аргумент
       </h5>
       <CaseStudyCarousel/>
-      
+      {isOpen && <CaseStudyGallery/>}
     </section>
   );
 }

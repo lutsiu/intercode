@@ -1,27 +1,33 @@
 import { CaseStudyPageCardType, CaseStudyType } from "../types/CaesStudyType";
+import { ShowCaseGalleryItem } from "../types/ShowCaseGalleryType";
 
 const caseStudies: CaseStudyType[] = [
-  {
+  { 
+    id: 1,
     image: "/caseStudies/docgo.webp",
     title: "DocGo",
     subtitle: "Приватна клініка",
   },
-  {
+  { 
+    id: 2,
     image: "/caseStudies/learnup.webp",
     title: "LearnUp",
     subtitle: "Освітній стартап",
   },
-  {
+  { 
+    id: 3,
     image: "/caseStudies/eatflow.webp",
     title: "EatFlow",
     subtitle: "Доставка їжі",
   },
-  {
+  { 
+    id: 4,
     image: "/caseStudies/lushglow.webp",
     title: "Lush Glow",
     subtitle: "Бренд доглядової косметики",
   },
-  {
+  { 
+    id: 5,
     image: "/caseStudies/bricknkey.webp",
     title: "Brick & Key",
     subtitle: "Агентство з нерухомості",
@@ -74,3 +80,13 @@ export const caseStudiesPageCards: CaseStudyPageCardType[] = [
 ];
 
 export default caseStudies;
+
+const IMG = "/cat.png";
+
+export const showCaseGalleryData: ShowCaseGalleryItem[] = Array.from(
+  { length: 5 },
+  (_, i) => ({
+    id: i + 1,
+    images: [IMG, IMG, IMG, IMG],
+  })
+);

@@ -15,6 +15,7 @@ export default function HeroImage() {
                  sm:w-[50rem] xl:w-[60rem] 2xl:w-[84rem] 
                  h-[39rem] sm:h-[45rem] xl:h-[50rem] 2xl:h-[71.4rem]
       "
+      priority
     />
   )
 }

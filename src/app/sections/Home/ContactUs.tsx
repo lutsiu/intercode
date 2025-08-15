@@ -19,7 +19,7 @@ export default function ContactUs() {
         <ContactUsForm/>
 
         <div>
-        <ContactUsImage/>
+          <ContactUsImage/>
         </div>
       </div>
       

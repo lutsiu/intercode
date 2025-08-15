@@ -1,4 +1,5 @@
 export interface CaseStudyType {
+  id: number;
   image: string;
   title: string;
   subtitle: string;

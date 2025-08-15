@@ -9,6 +9,7 @@ export default function ContactUsImage() {
       width={324} 
       height={284}
       className=" lg:absolute lg:bottom-[0rem] lg:right-[8rem] xl:right-[10rem] 2xl:right-[17.4rem]"
+      priority
     />
   )
 }
