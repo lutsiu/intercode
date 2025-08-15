@@ -9,7 +9,7 @@ export default function ServiceCard({icon, title, duration}: ServiceCardType) {
                     bg-gradient-to-b from-[#9BC3FF] to-[#186AE5] 
                     flex flex-col items-center lg:items-start justify-between">
 
-      <div className="flex flex-col items-center">
+      <div className="flex flex-col items-center lg:items-start">
         <Image 
           src={icon} 
           alt={title} 

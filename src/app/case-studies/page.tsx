@@ -6,6 +6,7 @@ import CaseStudyPageCard from "../components/CaseStudies/CaseStudyPageCard";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import { NextButton, PrevButton } from "../components/CaseStudies/CaseStudiesPageButtons";
+import CarouselProgress from "../components/Common/CarouselProgress";
 
 export default function CaseStudiesPage() {
   const [emblaRef, emblaApi] = useEmblaCarousel({
@@ -50,14 +51,13 @@ export default function CaseStudiesPage() {
         <NextButton embla={emblaApi} />
       </div>
 
-      <div className="w-[31.2rem] mt-[9.7rem] mx-auto h-[3px] bg-[#E4E5E5] relative overflow-hidden rounded-full">
-        <div
-          className="absolute left-0 top-0 h-full bg-blue-600 transition-all duration-1000 rounded-full"
-          style={{
-            width: `${(selectedIndex + 1) * (100 / caseStudiesPageCards.length)}%`
-          }}
-        />
-      </div>
+      <CarouselProgress
+        current={selectedIndex}
+        total={caseStudiesPageCards.length}
+        perView={1}
+        className="mt-[9.7rem]"
+        durationMs={1000}
+      />
     </section>
   );
 }

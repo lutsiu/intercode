@@ -41,7 +41,7 @@ export default function Technologies() {
         </ul>
       </div>
       
-
+      <p className="text-center font-semibold text-[2rem] mt-[3rem] sm:mt-[5rem] sm:mr-[3rem]">Та інші</p>
     </section>
   );
 }
