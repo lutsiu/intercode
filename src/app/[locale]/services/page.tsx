@@ -1,11 +1,11 @@
 'use client';
 
 import { useState } from "react";
-import SectionTitle from "../components/Common/SectionTitle";
-import ServicePopup from "../components/Services/Popup/Popup";
-import ServicePageCards from "../components/Services/ServicePageCards";
-import { ServicePageItemType } from "../types/ServicePageItemType";
-import useLockBodyScroll from "../hooks/useLockBodyScroll";
+import SectionTitle from "../../components/Common/SectionTitle";
+import ServicePopup from "../../components/Services/Popup/Popup";
+import ServicePageCards from "../../components/Services/ServicePageCards";
+import { ServicePageItemType } from "../../types/ServicePageItemType";
+import useLockBodyScroll from "../../hooks/useLockBodyScroll";
 
 export default function ServicesPage() {
   const [activePopup, setActivePopup] = useState<ServicePageItemType | null>(null);

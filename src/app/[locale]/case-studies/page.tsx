@@ -1,12 +1,12 @@
 'use client';
 
-import SectionTitle from "../components/Common/SectionTitle";
-import { caseStudiesPageCards } from "../data/CaseStudies";
-import CaseStudyPageCard from "../components/CaseStudies/CaseStudyPageCard";
+import SectionTitle from "../../components/Common/SectionTitle";
+import { caseStudiesPageCards } from "../../data/CaseStudies";
+import CaseStudyPageCard from "../../components/CaseStudies/CaseStudyPageCard";
 import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
-import { NextButton, PrevButton } from "../components/CaseStudies/CaseStudiesPageButtons";
-import CarouselProgress from "../components/Common/CarouselProgress";
+import { NextButton, PrevButton } from "../../components/CaseStudies/CaseStudiesPageButtons";
+import CarouselProgress from "../../components/Common/CarouselProgress";
 
 export default function CaseStudiesPage() {
   const [emblaRef, emblaApi] = useEmblaCarousel({

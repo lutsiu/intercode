@@ -1,10 +1,12 @@
 "use client";
 
 import { useContactPopupStore } from "@/app/store/contactPopupStore"
+import { useTranslations } from "next-intl";
 
 export default function ContactUsButton() {
 
   const {open} = useContactPopupStore();
+  const t = useTranslations('header');
 
   return (
     <button
@@ -17,7 +19,7 @@ export default function ContactUsButton() {
                    flex items-center justify-center
                    "
     >
-      Contact us
+      {t('contactCta')}
     </button>
   )
 }

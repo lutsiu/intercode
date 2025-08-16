@@ -1,8 +1,8 @@
 'use client';
 
-import SectionTitle from "../components/Common/SectionTitle";
-import PlansSection from "../components/RentIt/PlansSection";
-import TemplatesSection from "../components/RentIt/TemplatesSection";
+import SectionTitle from "../../components/Common/SectionTitle";
+import PlansSection from "../../components/RentIt/PlansSection";
+import TemplatesSection from "../../components/RentIt/TemplatesSection";
 export default function RentItPage() {
 
   return (

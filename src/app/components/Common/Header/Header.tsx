@@ -7,7 +7,7 @@ import HeaderMobile from "./HeaderMobile";
 
 export default function Header() {
   const pathname = usePathname();
-  const isMainPage = pathname === "/";
+  const isMainPage = pathname === "/pl" || "/en" || "/uk";
   
   const bgColor = isMainPage ? "bg-[#B9EDFF]" : "bg-[#8CD1F5]";
   return (

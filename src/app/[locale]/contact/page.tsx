@@ -1,7 +1,7 @@
 'use client';
 
-import ContactForm from "../components/Common/ContactPopup/ContactPopupForm";
-import SectionTitle from "../components/Common/SectionTitle";
+import ContactForm from "../../components/Common/ContactPopup/ContactPopupForm";
+import SectionTitle from "../../components/Common/SectionTitle";
 
 export default function RentItPage() {
 
