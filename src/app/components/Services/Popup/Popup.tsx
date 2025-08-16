@@ -19,12 +19,12 @@ export default function ServicePopup({ onClose, item }: Props) {
   const { popup } = item;
   const t = useTranslations();
 
-  const title = t(popup.title as any, { default: popup.title });
-  const intro = t(popup.intro as any, { default: popup.intro });
-  const description = t(popup.description as any, { default: popup.description });
-  const features = popup.features.map((f) => t(f as any, { default: f }));
-  const finalNote = t(popup.finalNote as any, { default: popup.finalNote });
-  const actionText = t(popup.actionText as any, { default: popup.actionText });
+  const title = t(popup.title as string, { default: popup.title });
+  const intro = t(popup.intro as string, { default: popup.intro });
+  const description = t(popup.description as string, { default: popup.description });
+  const features = popup.features.map((f) => t(f as string, { default: f }));
+  const finalNote = t(popup.finalNote as string, { default: popup.finalNote });
+  const actionText = t(popup.actionText as string, { default: popup.actionText });
   const whatWeDo = t("servicesPage.common.whatWeDo", { default: "Що зробимо:" });
 
   useClosePopupOnEscape(onClose);
