@@ -62,3 +62,4 @@ export const showCaseGalleryData: ShowCaseGalleryItem[] = Array.from({ length: 5
   id: i + 1,
   images: [IMG, IMG, IMG, IMG]
 }));
+  

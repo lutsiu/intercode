@@ -1,5 +1,4 @@
 import { useTranslations } from "next-intl";
-import { getTranslations } from "next-intl/server";
 import Image, { StaticImageData } from "next/image";
 
 type Props = {
