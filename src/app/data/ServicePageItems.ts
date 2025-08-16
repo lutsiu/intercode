@@ -1,101 +1,102 @@
+// src/app/data/ServicePageItems.ts
 import { ServicePageItemType } from "../types/ServicePageItemType";
 
 const serviceItems: ServicePageItemType[] = [
   {
-      "icon": "/services/desktop.svg",
-      "title": "Сайти",
-      "subtitle": "Швидкі, адаптивні, зрозумілі. Ми робимо сайти, які не просто “висять в інтернеті”, а ведуть клієнта до дії. Під будь-який бізнес.",
-      "popup": {
-          "title": "Розробка сайтів",
-          "intro": "💬 Краще сайт, ніж ще один Instagram-акаунт.",
-          "description": "Ми створюємо сайти, які не просто 'є'. Вони продають, пояснюють, ведуть. Landing, корпоративні, магазини, мікросайти — усе під ключ.",
-          "image": "/servicesPopups/website.webp",
-          "features": [
-              "🛠️ Дизайн, адаптація, верстка",
-              "📱 Оптимізація під мобільні (це не опція, це must)",
-              "🔍 Розумілива структура + швидке завантаження",
-              "🔗 Інтеграція з чатами, формами, CRM"
-          ],
-          "finalNote": "💡 Сайт — це твоя цифрова вітрина. Дай їй працювати на тебе.",
-          "actionText": "Замовити сайт →"
-      },
+    icon: "/services/desktop.svg",
+    title: "servicesPage.items.web.title",
+    subtitle: "servicesPage.items.web.subtitle",
+    popup: {
+      title: "servicesPage.items.web.popup.title",
+      intro: "servicesPage.items.web.popup.intro",
+      description: "servicesPage.items.web.popup.description",
+      image: "/servicesPopups/website.webp",
+      features: [
+        "servicesPage.items.web.popup.features.1",
+        "servicesPage.items.web.popup.features.2",
+        "servicesPage.items.web.popup.features.3",
+        "servicesPage.items.web.popup.features.4"
+      ],
+      finalNote: "servicesPage.items.web.popup.finalNote",
+      actionText: "servicesPage.items.web.popup.actionText"
+    }
   },
   {
-      "icon": "/services/smartphone.svg",
-      "title": "Мобільні апки",
-      "subtitle": "iOS чи Android — ми створюємо застосунки, які виглядають добре і працюють. З push-повідомленнями, оплатою, кабінетом користувача — усе, що потрібно твоєму сервісу.",
-      "popup": {
-          "title": "Розробка мобільних апок",
-          "intro": "💬 Твій сервіс у кишені клієнта.",
-          "description": "Розробляємо мобільні застосунки, які люди не видаляють через 2 дні. iOS, Android, кросплатформено — з максимальною увагою до UX.",
-          "image": "/servicesPopups/mobile-app.webp",
-          "features": [
-              "🛠️ UI/UX-дизайн, архітектура, API",
-              "📲 Push-нотифікації, інтеграції, аналітика",
-              "🧾 Авторизація, оплати, мікросервіси",
-              "🧪 Тестування, деплой в App Store/Google Play"
-          ],
-          "finalNote": "💡 А ще можна зробити MVP як мобільний застосунок — швидше, дешевше, мобільніше.",
-          "actionText": "Розробити апку →"
-      }
+    icon: "/services/smartphone.svg",
+    title: "servicesPage.items.mobile.title",
+    subtitle: "servicesPage.items.mobile.subtitle",
+    popup: {
+      title: "servicesPage.items.mobile.popup.title",
+      intro: "servicesPage.items.mobile.popup.intro",
+      description: "servicesPage.items.mobile.popup.description",
+      image: "/servicesPopups/mobile-app.webp",
+      features: [
+        "servicesPage.items.mobile.popup.features.1",
+        "servicesPage.items.mobile.popup.features.2",
+        "servicesPage.items.mobile.popup.features.3",
+        "servicesPage.items.mobile.popup.features.4"
+      ],
+      finalNote: "servicesPage.items.mobile.popup.finalNote",
+      actionText: "servicesPage.items.mobile.popup.actionText"
+    }
   },
   {
-      "icon": "/services/robot.svg",
-      "title": "Telegram-боти",
-      "subtitle": "Боти, які автоматизують: приймають замовлення, бронюють послуги, відповідають 24/7. Швидше, ніж застосунок. Дешевше, ніж вебсервіс. І ближче до клієнта.",
-      "popup": {
-          "title": "Телеграм-боти",
-          "intro": "💬 Все, що ти робиш руками — бот зробить автоматично.",
-          "description": "Ми створюємо ботів, які приймають замовлення, реєструють людей, відповідають на запитання й нікого не забувають.",
-          "image": "/servicesPopups/telegram-bot.webp",
-          "features": [
-              "⚙️ Бот для замовлень / бронювань / консультацій",
-              "🔌 Підключення до CRM, Google Sheets, платіжок",
-              "🧠 Мультимовність, інлайн-кнопки, меню",
-              "🌐 Інтеграція з сайтом або Instagram"
-          ],
-          "finalNote": "💡 Telegram — це швидше ніж сайт, дешевше ніж апка, і ближче до користувача.",
-          "actionText": "Хочу бота →"
-      }
+    icon: "/services/robot.svg",
+    title: "servicesPage.items.bots.title",
+    subtitle: "servicesPage.items.bots.subtitle",
+    popup: {
+      title: "servicesPage.items.bots.popup.title",
+      intro: "servicesPage.items.bots.popup.intro",
+      description: "servicesPage.items.bots.popup.description",
+      image: "/servicesPopups/telegram-bot.webp",
+      features: [
+        "servicesPage.items.bots.popup.features.1",
+        "servicesPage.items.bots.popup.features.2",
+        "servicesPage.items.bots.popup.features.3",
+        "servicesPage.items.bots.popup.features.4"
+      ],
+      finalNote: "servicesPage.items.bots.popup.finalNote",
+      actionText: "servicesPage.items.bots.popup.actionText"
+    }
   },
   {
-      "icon": "/services/rocket.svg",
-      "title": "MVP-проєкти",
-      "subtitle": "Твоя ідея — в реальному продукті за 10–15 днів. Швидкий запуск, мінімум функцій, максимум сенсу. Ідеально для перевірки гіпотез.",
-      "popup": {
-          "title": "Створення MVP",
-          "intro": "💬 Перевір гіпотезу — не бюджет.",
-          "description": "Допомагаємо швидко й ефективно перевірити, чи потрібна твоя ідея людям. MVP — це перший робочий варіант продукту, без зайвого коду, але з реальною цінністю.",
-          "image": "/servicesPopups/mvp.webp",
-          "features": [
-              "🧩 Складання функціоналу 'must-have'",
-              "🛠️ Розробка (сайт, бот або апка — що швидше)",
-              "📊 Аналітика, тести, збір зворотного зв’язку",
-              "🧠 Готове рішення — за 10–15 днів"
-          ],
-          "finalNote": "💡 Не пиши технічне завдання на 30 сторінок. Пиши нам.",
-          "actionText": "Запустити MVP →"
-      }
+    icon: "/services/rocket.svg",
+    title: "servicesPage.items.mvp.title",
+    subtitle: "servicesPage.items.mvp.subtitle",
+    popup: {
+      title: "servicesPage.items.mvp.popup.title",
+      intro: "servicesPage.items.mvp.popup.intro",
+      description: "servicesPage.items.mvp.popup.description",
+      image: "/servicesPopups/mvp.webp",
+      features: [
+        "servicesPage.items.mvp.popup.features.1",
+        "servicesPage.items.mvp.popup.features.2",
+        "servicesPage.items.mvp.popup.features.3",
+        "servicesPage.items.mvp.popup.features.4"
+      ],
+      finalNote: "servicesPage.items.mvp.popup.finalNote",
+      actionText: "servicesPage.items.mvp.popup.actionText"
+    }
   },
   {
-      "icon": "/services/star.svg",
-      "title": "Аутстаффінг",
-      "subtitle": "Гнучко, швидко, без зайвих рухів. Ми не просто додаємо людей — ми вбудовуємось у процес і підсилюємо команду. Під будь-який проект і стек.",
-      "popup": {
-          "title": "Аутстаффінг",
-          "intro": "💬 Не наймайте команду. Наймайте результат.",
-          "description": "Ми беремо на себе повністю технічну частину: від одного розробника до команди під проєкт. Back-end, front-end, QA, DevOps — без болі з пошуком, адаптацією і мікроменеджментом.",
-          "image": "/servicesPopups/outstaff.webp",
-          "features": [
-              "🛠️ Підберемо розробника або команду під задачу",
-              "🌼 Інтегруємось у ваш процес або побудуємо з нуля",
-              "🛠️ Працюємо через Jira / Trello / Notion — як вам зручно",
-              "📊 Звіти щотижня, без мікроконтролю",
-              "📗 Гарантуємо NDA, стабільність і чистий код"
-          ],
-          "finalNote": "💡 Ваша команда росте — без HR, зайвих кабінетів і офісів.",
-          "actionText": "Запросити команду →"
-      }
+    icon: "/services/star.svg",
+    title: "servicesPage.items.outstaff.title",
+    subtitle: "servicesPage.items.outstaff.subtitle",
+    popup: {
+      title: "servicesPage.items.outstaff.popup.title",
+      intro: "servicesPage.items.outstaff.popup.intro",
+      description: "servicesPage.items.outstaff.popup.description",
+      image: "/servicesPopups/outstaff.webp",
+      features: [
+        "servicesPage.items.outstaff.popup.features.1",
+        "servicesPage.items.outstaff.popup.features.2",
+        "servicesPage.items.outstaff.popup.features.3",
+        "servicesPage.items.outstaff.popup.features.4",
+        "servicesPage.items.outstaff.popup.features.5"
+      ],
+      finalNote: "servicesPage.items.outstaff.popup.finalNote",
+      actionText: "servicesPage.items.outstaff.popup.actionText"
+    }
   }
 ];
 

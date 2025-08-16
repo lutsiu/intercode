@@ -1,15 +1,17 @@
+// app/components/Services/Popup/PopupDescription.tsx
 interface Props {
+  heading: string;
   features: string[];
   finalNote: string;
 }
 
-export default function PopupDescription({ features, finalNote }: Props) {
+export default function PopupDescription({ heading, features, finalNote }: Props) {
   return (
     <div className="sm:px-[1.85rem] flex flex-col gap-[2.4rem] text-center md:text-left">
-      <h6 className="font-bold text-[1.4rem] sm:text-[1.6rem]">Що зробимо:</h6>
+      <h6 className="font-bold text-[1.4rem] sm:text-[1.6rem]">{heading}</h6>
       <ul>
         {features.map((f, i) => (
-          <li 
+          <li
             key={i}
             className="leading-[2.4rem] text-[1.2rem] sm:text-[1.4rem] md:text-[1.6rem] mt-[0.5rem]"
           >

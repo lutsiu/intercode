@@ -122,5 +122,99 @@
         "subtitle": { "p1": "Formularz jest prosty. Proces jeszcze prostszy.", "p2": "Bez zbędnych etapów." }
       }
     }
+  },
+  "servicesPage": {
+    "title": "Usługi, które działają",
+    "tagline": "Minimum „zrobimy wszystko”. Maksimum — to, czego naprawdę potrzebuje Twój biznes.",
+    "details": "Szczegóły",
+    "common": { "whatWeDo": "Co zrobimy:" },
+    "items": {
+      "web": {
+        "title": "Strony internetowe",
+        "subtitle": "Szybkie, responsywne, zrozumiałe. Tworzymy strony, które nie tylko „wiszą w internecie”, ale prowadzą klienta do działania. Dla każdego biznesu.",
+        "popup": {
+          "title": "Tworzenie stron",
+          "intro": "💬 Lepiej mieć stronę niż kolejny profil na Instagramie.",
+          "description": "Budujemy strony, które nie tylko „są”. One sprzedają, wyjaśniają i prowadzą. Landing page, korporacyjne, sklepy, mikrowitryny — kompleksowo.",
+          "features": {
+            "1": "🛠️ Projekt, adaptacja, wdrożenie",
+            "2": "📱 Optymalizacja mobilna (to nie opcja, to konieczność)",
+            "3": "🔍 Przejrzysta struktura + szybkie ładowanie",
+            "4": "🔗 Integracje z czatami, formularzami, CRM"
+          },
+          "finalNote": "💡 Strona to Twoja cyfrowa witryna. Niech na Ciebie pracuje.",
+          "actionText": "Zamów stronę →"
+        }
+      },
+      "mobile": {
+        "title": "Aplikacje mobilne",
+        "subtitle": "iOS lub Android — tworzymy aplikacje, które dobrze wyglądają i działają. Z powiadomieniami push, płatnościami, panelem użytkownika — wszystkim, czego potrzebuje Twój serwis.",
+        "popup": {
+          "title": "Tworzenie aplikacji mobilnych",
+          "intro": "💬 Twój serwis w kieszeni klienta.",
+          "description": "Budujemy aplikacje, których ludzie nie usuwają po dwóch dniach. iOS, Android, rozwiązania cross-platformowe — z maksymalnym naciskiem na UX.",
+          "features": {
+            "1": "🛠️ UI/UX, architektura, API",
+            "2": "📲 Powiadomienia push, integracje, analityka",
+            "3": "🧾 Autoryzacja, płatności, mikroserwisy",
+            "4": "🧪 Testy i publikacja w App Store / Google Play"
+          },
+          "finalNote": "💡 MVP możesz też zrobić jako aplikację — szybciej, taniej, wygodniej.",
+          "actionText": "Zbuduj aplikację →"
+        }
+      },
+      "bots": {
+        "title": "Boty Telegram",
+        "subtitle": "Boty, które automatyzują: przyjmują zamówienia, rezerwują usługi, odpowiadają 24/7. Szybciej niż aplikacja. Taniej niż serwis web. Bliżej klienta.",
+        "popup": {
+          "title": "Boty Telegram",
+          "intro": "💬 To, co robisz ręcznie — bot zrobi automatycznie.",
+          "description": "Tworzymy boty, które przyjmują zamówienia, rejestrują użytkowników, odpowiadają na pytania i nikogo nie pomijają.",
+          "features": {
+            "1": "⚙️ Bot do zamówień / rezerwacji / konsultacji",
+            "2": "🔌 Integracje z CRM, Google Sheets, płatnościami",
+            "3": "🧠 Wielojęzyczność, przyciski inline, menu",
+            "4": "🌐 Integracja ze stroną lub Instagramem"
+          },
+          "finalNote": "💡 Telegram jest szybszy niż strona, tańszy niż aplikacja i bliżej użytkownika.",
+          "actionText": "Chcę bota →"
+        }
+      },
+      "mvp": {
+        "title": "Projekty MVP",
+        "subtitle": "Twój pomysł jako realny produkt w 10–15 dni. Szybki start, minimum funkcji, maksimum sensu. Idealnie do weryfikacji hipotez.",
+        "popup": {
+          "title": "Budowa MVP",
+          "intro": "💬 Weryfikuj hipotezę — nie budżet.",
+          "description": "Pomagamy szybko i skutecznie sprawdzić, czy ludzie potrzebują Twojego pomysłu. MVP to pierwsza działająca wersja — bez zbędnego kodu, z realną wartością.",
+          "features": {
+            "1": "🧩 Zakres funkcji must-have",
+            "2": "🛠️ Development (strona, bot lub aplikacja — co najszybsze)",
+            "3": "📊 Analityka, testy, zbieranie feedbacku",
+            "4": "🧠 Gotowe w 10–15 dni"
+          },
+          "finalNote": "💡 Nie pisz 30-stronicowego speca. Napisz do nas.",
+          "actionText": "Uruchom MVP →"
+        }
+      },
+      "outstaff": {
+        "title": "Outstaffing",
+        "subtitle": "Elastycznie, szybko, bez zbędnych ruchów. Nie tylko dodajemy ludzi — wbudowujemy się w proces i wzmacniamy zespół. Do każdego projektu i stacku.",
+        "popup": {
+          "title": "Outstaffing",
+          "intro": "💬 Nie zatrudniaj zespołu. Zatrudniaj rezultat.",
+          "description": "Przejmujemy całą część techniczną: od jednego developera po zespół pod projekt. Back-end, front-end, QA, DevOps — bez bólu rekrutacji, wdrożenia i mikrozarządzania.",
+          "features": {
+            "1": "🛠️ Dobierzemy developera lub zespół pod zadanie",
+            "2": "🌼 Wejdziemy w Twój proces albo zbudujemy go od zera",
+            "3": "🛠️ Pracujemy w Jira / Trello / Notion — jak Ci wygodnie",
+            "4": "📊 Cotygodniowe raporty, bez mikrozarządzania",
+            "5": "📗 NDA, stabilność i czysty kod — gwarantowane"
+          },
+          "finalNote": "💡 Twój zespół rośnie — bez HR, dodatkowych biurek i biur.",
+          "actionText": "Zgłoś zapotrzebowanie →"
+        }
+      }
+    }
   }
 }

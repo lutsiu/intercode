@@ -122,5 +122,99 @@
         "subtitle": { "p1": "The form is simple. The process is even simpler.", "p2": "No unnecessary steps." }
       }
     }
+  },
+  "servicesPage": {
+    "title": "Services that work",
+    "tagline": "Minimum “we can do everything.” Maximum—what your business actually needs.",
+    "details": "Details",
+    "common": { "whatWeDo": "What we'll do:" },
+    "items": {
+      "web": {
+        "title": "Websites",
+        "subtitle": "Fast, responsive, clear. We build sites that don’t just “hang on the internet”, but lead the customer to action. For any business.",
+        "popup": {
+          "title": "Website development",
+          "intro": "💬 Better a website than yet another Instagram account.",
+          "description": "We build websites that don’t just “exist”. They sell, explain and guide. Landing pages, corporate sites, stores, microsites—end to end.",
+          "features": {
+            "1": "🛠️ Design, adaptation, markup",
+            "2": "📱 Mobile optimization (not optional—it's a must)",
+            "3": "🔍 Clear structure + fast loading",
+            "4": "🔗 Integrations with chats, forms, CRM"
+          },
+          "finalNote": "💡 A website is your digital storefront. Let it work for you.",
+          "actionText": "Order a website →"
+        }
+      },
+      "mobile": {
+        "title": "Mobile apps",
+        "subtitle": "iOS or Android—we create apps that look great and work great. With push notifications, payments, user accounts—everything your service needs.",
+        "popup": {
+          "title": "Mobile app development",
+          "intro": "💬 Your service in the customer’s pocket.",
+          "description": "We build mobile apps people don’t delete after two days. iOS, Android, cross-platform—with maximum attention to UX.",
+          "features": {
+            "1": "🛠️ UI/UX design, architecture, API",
+            "2": "📲 Push notifications, integrations, analytics",
+            "3": "🧾 Auth, payments, microservices",
+            "4": "🧪 Testing, deploy to App Store / Google Play"
+          },
+          "finalNote": "💡 You can also ship an MVP as a mobile app—faster, cheaper, more mobile.",
+          "actionText": "Build an app →"
+        }
+      },
+      "bots": {
+        "title": "Telegram bots",
+        "subtitle": "Bots that automate: take orders, book services, reply 24/7. Faster than an app. Cheaper than a web service. Closer to the client.",
+        "popup": {
+          "title": "Telegram bots",
+          "intro": "💬 Everything you do manually—a bot will do automatically.",
+          "description": "We build bots that take orders, register users, answer questions and forget no one.",
+          "features": {
+            "1": "⚙️ Bots for orders / bookings / consultations",
+            "2": "🔌 Integrations with CRM, Google Sheets, payments",
+            "3": "🧠 Multilingual, inline buttons, menus",
+            "4": "🌐 Integration with your site or Instagram"
+          },
+          "finalNote": "💡 Telegram is faster than a site, cheaper than an app, and closer to the user.",
+          "actionText": "I want a bot →"
+        }
+      },
+      "mvp": {
+        "title": "MVP projects",
+        "subtitle": "Your idea as a real product in 10–15 days. Fast launch, minimum features, maximum sense. Perfect for validating hypotheses.",
+        "popup": {
+          "title": "Build an MVP",
+          "intro": "💬 Validate the hypothesis—not the budget.",
+          "description": "We help quickly and efficiently check whether people need your idea. An MVP is the first working version—no extra code, real value.",
+          "features": {
+            "1": "🧩 Defining the must-have scope",
+            "2": "🛠️ Development (site, bot or app—whichever is faster)",
+            "3": "📊 Analytics, tests, feedback collection",
+            "4": "🧠 Ready in 10–15 days"
+          },
+          "finalNote": "💡 Don’t write a 30-page spec. Write to us.",
+          "actionText": "Launch MVP →"
+        }
+      },
+      "outstaff": {
+        "title": "Outstaffing",
+        "subtitle": "Flexible, fast, no extra moves. We don’t just add people—we embed into your process and strengthen the team. For any project and stack.",
+        "popup": {
+          "title": "Outstaffing",
+          "intro": "💬 Don’t hire a team. Hire results.",
+          "description": "We take over the entire tech part: from a single developer to a full project team. Back-end, front-end, QA, DevOps—without the pain of hiring, onboarding and micromanagement.",
+          "features": {
+            "1": "🛠️ We’ll match a developer or a team to the task",
+            "2": "🌼 We integrate into your process or build it from scratch",
+            "3": "🛠️ We work via Jira / Trello / Notion—whatever suits you",
+            "4": "📊 Weekly reports, no micromanagement",
+            "5": "📗 NDA, stability and clean code guaranteed"
+          },
+          "finalNote": "💡 Your team grows—without HR, extra desks or offices.",
+          "actionText": "Request a team →"
+        }
+      }
+    }
   }
 }
