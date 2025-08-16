@@ -13,43 +13,43 @@ const caseStudies: CaseStudyType[] = [
 export const caseStudiesPageCards: CaseStudyPageCardType[] = [
   {
     projectName: "LearnUp",
-    client: "Освітній стартап",
-    task: "MVP для тесту гіпотези — курси з англійської онлайн",
+    client: "caseStudiesPage.items.learnup.client",
+    task: "caseStudiesPage.items.learnup.task",
     deliverables: [
-      "Простий сайт з каталогом курсів",
-      "Реєстрація, оплата, таймери та кабінет учня",
-      "Система домашок і сертифікації"
+      "caseStudiesPage.items.learnup.deliverables.1",
+      "caseStudiesPage.items.learnup.deliverables.2",
+      "caseStudiesPage.items.learnup.deliverables.3"
     ],
     stack: ["Vue.js", "Firebase", "Stripe"],
-    results: "MVP за 12 днів, перші 100 користувачів — за тиждень",
+    results: "caseStudiesPage.items.learnup.results",
     image: "/caseStudies/learn-up-big.webp",
     textColor: "black"
   },
   {
     projectName: "Lush Glow",
-    client: "Бренд доглядової косметики",
-    task: "Створити швидкий e-commerce сайт із мінімалістичним дизайном",
+    client: "caseStudiesPage.items.lushglow.client",
+    task: "caseStudiesPage.items.lushglow.task",
     deliverables: [
-      "Дизайн UX/UI з упором на мобільний досвід",
-      "Інтеграція Stripe + Nova Poshta API",
-      "Адмін-панель для керування товарами"
+      "caseStudiesPage.items.lushglow.deliverables.1",
+      "caseStudiesPage.items.lushglow.deliverables.2",
+      "caseStudiesPage.items.lushglow.deliverables.3"
     ],
     stack: ["React", "Next.js", "Firebase", "Tailwind"],
-    results: "+53% до онлайн-продажів за перші 3 тижні",
+    results: "caseStudiesPage.items.lushglow.results",
     image: "/caseStudies/lush-glow-big.webp",
     textColor: "white"
   },
   {
     projectName: "DocGo",
-    client: "Приватна клініка",
-    task: "Цифровізувати процеси запису і зберігання даних",
+    client: "caseStudiesPage.items.docgo.client",
+    task: "caseStudiesPage.items.docgo.task",
     deliverables: [
-      "Web і мобільний додаток для пацієнтів",
-      "Інтеграція календаря лікарів і онлайн-оплати",
-      "Безпечне зберігання медичних даних"
+      "caseStudiesPage.items.docgo.deliverables.1",
+      "caseStudiesPage.items.docgo.deliverables.2",
+      "caseStudiesPage.items.docgo.deliverables.3"
     ],
     stack: ["Flutter", "Node.js", "PostgreSQL"],
-    results: "-42% навантаження на рецепцію, +70% пацієнтів обирають онлайн-запис",
+    results: "caseStudiesPage.items.docgo.results",
     image: "/caseStudies/doc-go-big.webp",
     textColor: "black"
   }

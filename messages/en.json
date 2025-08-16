@@ -216,5 +216,48 @@
         }
       }
     }
+  },
+  "caseStudiesPage": {
+    "title": "Case studies",
+    "cta": "I want this too!",
+    "labels": {
+      "client": "Client:",
+      "task": "Task:",
+      "done": "What we did:",
+      "stack": "Tech stack:",
+      "result": "Result:"
+    },
+    "items": {
+      "learnup": {
+        "client": "Educational startup",
+        "task": "MVP to test the hypothesis — online English courses",
+        "deliverables": {
+          "1": "Simple website with a course catalog",
+          "2": "Sign-up, payments, timers, and student dashboard",
+          "3": "Homework and certification system"
+        },
+        "results": "MVP in 12 days, first 100 users in a week"
+      },
+      "lushglow": {
+        "client": "Skincare brand",
+        "task": "Build a fast e-commerce site with a minimalist design",
+        "deliverables": {
+          "1": "UX/UI design focused on mobile experience",
+          "2": "Integration: Stripe + Nova Poshta API",
+          "3": "Admin panel for product management"
+        },
+        "results": "+53% online sales in the first 3 weeks"
+      },
+      "docgo": {
+        "client": "Private clinic",
+        "task": "Digitize appointment and data storage processes",
+        "deliverables": {
+          "1": "Web and mobile app for patients",
+          "2": "Doctor scheduling integration and online payments",
+          "3": "Secure storage of medical data"
+        },
+        "results": "−42% front desk workload, +70% of patients choose online booking"
+      }
+    }
   }
 }

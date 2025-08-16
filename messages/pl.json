@@ -216,5 +216,48 @@
         }
       }
     }
+  },
+  "caseStudiesPage": {
+    "title": "Case studies",
+    "cta": "Też tak chcę!",
+    "labels": {
+      "client": "Klient:",
+      "task": "Zadanie:",
+      "done": "Co zrobiliśmy:",
+      "stack": "Technologie:",
+      "result": "Wynik:"
+    },
+    "items": {
+      "learnup": {
+        "client": "Start-up edukacyjny",
+        "task": "MVP do testu hipotezy — kursy angielskiego online",
+        "deliverables": {
+          "1": "Prosta strona z katalogiem kursów",
+          "2": "Rejestracja, płatności, timery i panel ucznia",
+          "3": "System prac domowych i certyfikacji"
+        },
+        "results": "MVP w 12 dni, pierwszych 100 użytkowników w tydzień"
+      },
+      "lushglow": {
+        "client": "Marka kosmetyków pielęgnacyjnych",
+        "task": "Szybki serwis e-commerce o minimalistycznym designie",
+        "deliverables": {
+          "1": "Projekt UX/UI z naciskiem na mobile",
+          "2": "Integracja: Stripe + Nova Poshta API",
+          "3": "Panel admina do zarządzania produktami"
+        },
+        "results": "+53% sprzedaży online w pierwszych 3 tygodniach"
+      },
+      "docgo": {
+        "client": "Prywatna klinika",
+        "task": "Cyfryzacja zapisów i przechowywania danych",
+        "deliverables": {
+          "1": "Aplikacja webowa i mobilna dla pacjentów",
+          "2": "Integracja grafiku lekarzy i płatności online",
+          "3": "Bezpieczne przechowywanie danych medycznych"
+        },
+        "results": "−42% obciążenia recepcji, +70% pacjentów wybiera rezerwację online"
+      }
+    }
   }
 }
