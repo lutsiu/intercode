@@ -68,6 +68,59 @@
         "entertainment": "Rozrywka",
         "localBusiness": "Biznes lokalny"
       }
+    },
+    "cases": {
+      "title": "Case studies",
+      "tagline": {
+        "p1": "Mniej słów — więcej case’ów.",
+        "p2": "Wyniki mówią najwięcej"
+      },
+      "items": {
+        "docgo": { "title": "DocGo", "subtitle": "Prywatna klinika" },
+        "learnup": { "title": "LearnUp", "subtitle": "Startup edukacyjny" },
+        "eatflow": { "title": "EatFlow", "subtitle": "Dostawa jedzenia" },
+        "lushglow": { "title": "Lush Glow", "subtitle": "Marka kosmetyczna" },
+        "bricknkey": { "title": "Brick & Key", "subtitle": "Agencja nieruchomości" }
+      }
+    },
+    "about": {
+      "title": "O nas",
+      "tagline": "Mniej słów — więcej case’ów. Wyniki mówią najwięcej",
+      "cards": {
+        "partners": {
+          "title": "Nie jesteśmy agencją. Jesteśmy partnerami.",
+          "subtitle": "🧠 Myślimy jak biznes",
+          "description": "Nie tylko realizujemy zadania. Proponujemy rozwiązania, które dowożą wynik. Znamy ROI, MVP i wiemy, kiedy nie warto nadmiernie komplikować."
+        },
+        "fastStart": {
+          "title": "Kodujemy szybko, ale solidnie",
+          "subtitle": "🚀 Szybki start",
+          "description": "Wchodzimy w projekt w ciągu 3 dni od pierwszej rozmowy. Bez długich briefów, bez opóźnień, bez zbędnych rzeczy."
+        },
+        "plainSpeech": {
+          "title": "Mówimy prosto",
+          "subtitle": "💬 Bez techno-poezji",
+          "description": "Tłumaczymy ludzkim językiem co, jak i dlaczego robimy. Zawsze w kontakcie, w pełni transparentni."
+        },
+        "rightTools": {
+          "title": "Wybieramy to, co działa",
+          "subtitle": "🎯 Technologia do zadania",
+          "description": "Nie wciskamy skomplikowanych rozwiązań, gdy można prościej. Proponujemy to, co pasuje do Twojego projektu."
+        }
+      }
+    },
+    "contact": {
+      "form": {
+        "name": "Imię i nazwisko",
+        "email": "Email",
+        "task": "Co trzeba zrobić?",
+        "promo": "PROMO CODE",
+        "cta": "Zacznijmy współpracę"
+      },
+      "pitch": {
+        "title": { "p1": "Masz pomysł?", "p2": "Już słuchamy." },
+        "subtitle": { "p1": "Formularz jest prosty. Proces jeszcze prostszy.", "p2": "Bez zbędnych etapów." }
+      }
     }
   }
 }

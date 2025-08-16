@@ -68,6 +68,59 @@
         "entertainment": "Entertainment",
         "localBusiness": "Local businesses"
       }
+    },
+    "cases": {
+      "title": "Case studies",
+      "tagline": {
+        "p1": "Fewer words — more cases.",
+        "p2": "Results are the best argument"
+      },
+      "items": {
+        "docgo": { "title": "DocGo", "subtitle": "Private clinic" },
+        "learnup": { "title": "LearnUp", "subtitle": "Edtech startup" },
+        "eatflow": { "title": "EatFlow", "subtitle": "Food delivery" },
+        "lushglow": { "title": "Lush Glow", "subtitle": "Skincare brand" },
+        "bricknkey": { "title": "Brick & Key", "subtitle": "Real estate agency" }
+      }
+    },
+    "about": {
+      "title": "About us",
+      "tagline": "Fewer words — more cases. Results speak best",
+      "cards": {
+        "partners": {
+          "title": "We're not an agency. We're partners.",
+          "subtitle": "🧠 We think like a business",
+          "description": "We don't just do tasks. We propose solutions that drive results. We know ROI, MVP, and when not to over-engineer."
+        },
+        "fastStart": {
+          "title": "We code fast, not sloppy",
+          "subtitle": "🚀 Fast start",
+          "description": "We get to work within 3 days after the first call. No long briefs, no delays, no fluff."
+        },
+        "plainSpeech": {
+          "title": "We speak plainly",
+          "subtitle": "💬 No tech poetry",
+          "description": "We explain in human terms what, how and why we do things. Always reachable, fully transparent."
+        },
+        "rightTools": {
+          "title": "We choose what works",
+          "subtitle": "🎯 Tech for the task",
+          "description": "We don't push complex solutions when simple ones work. We propose what fits your project."
+        }
+      }
+    },
+    "contact": {
+      "form": {
+        "name": "Name Surname",
+        "email": "Email",
+        "task": "What needs to be done?",
+        "promo": "PROMO CODE",
+        "cta": "Start working together"
+      },
+      "pitch": {
+        "title": { "p1": "Got an idea?", "p2": "We’re listening." },
+        "subtitle": { "p1": "The form is simple. The process is even simpler.", "p2": "No unnecessary steps." }
+      }
     }
   }
 }
