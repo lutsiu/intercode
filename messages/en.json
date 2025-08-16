@@ -22,6 +22,52 @@
         "signContract": "We sign a contract",
         "startNextDay": "We start the next day"
       }
+    },
+    "calculator": {
+      "title": "Project calculator",
+      "subtitle": {
+        "p1": "Get the cost",
+        "p2": "of your project",
+        "p3": "within 12 hours!"
+      },
+      "cta": "Calculate cost"
+    },
+    "services": {
+      "title": "Services",
+      "cta": "Learn more",
+      "cards": {
+        "outstaffing": { "title": "Outstaffing", "duration": "Timeline: to be discussed" },
+        "web":         { "title": "Web development", "duration": "Timeline: 2–4 days" },
+        "mvp":         { "title": "MVP", "duration": "Timeline: 8–14 days" },
+        "mobile":      { "title": "Mobile apps", "duration": "Timeline: 5–7 days" },
+        "bots":        { "title": "Telegram bots", "duration": "Timeline: 1–2 days" }
+      }
+    },
+    "technologies": {
+      "title": {
+        "full": "Technologies we work with",
+        "p1": "Technologies",
+        "p2": "we work with"
+      },
+      "andOthers": "And others"
+    },
+    "industries": {
+      "title": {
+        "full": "Industries we work with",
+        "p1": "Industries",
+        "p2": "we work with"
+      },
+      "items": {
+        "ecommerce": "E-commerce",
+        "healthcare": "Healthcare",
+        "education": "Education",
+        "foodtech": "Food tech",
+        "realEstate": "Real estate",
+        "hospitality": "Hospitality",
+        "enterprise": "Enterprise solutions",
+        "entertainment": "Entertainment",
+        "localBusiness": "Local businesses"
+      }
     }
   }
 }

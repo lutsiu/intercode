@@ -22,6 +22,52 @@
         "signContract": "Podpisujemy umowę",
         "startNextDay": "Startujemy następnego dnia"
       }
+    },
+    "calculator": {
+      "title": "Kalkulator projektu",
+      "subtitle": {
+        "p1": "Poznaj koszt",
+        "p2": "Twojego projektu",
+        "p3": "w 12 godzin!"
+      },
+      "cta": "Oblicz koszt"
+    },
+    "services": {
+      "title": "Usługi",
+      "cta": "Szczegóły",
+      "cards": {
+        "outstaffing": { "title": "Outstaffing", "duration": "Czas: do ustalenia" },
+        "web":         { "title": "Tworzenie stron", "duration": "Czas: 2–4 dni" },
+        "mvp":         { "title": "MVP", "duration": "Czas: 8–14 dni" },
+        "mobile":      { "title": "Aplikacje mobilne", "duration": "Czas: 5–7 dni" },
+        "bots":        { "title": "Boty Telegram", "duration": "Czas: 1–2 dni" }
+      }
+    },
+    "technologies": {
+      "title": {
+        "full": "Technologie, z którymi pracujemy",
+        "p1": "Technologie,",
+        "p2": "z którymi pracujemy"
+      },
+      "andOthers": "I inne"
+    },
+    "industries": {
+      "title": {
+        "full": "Branże, z którymi pracujemy",
+        "p1": "Branże,",
+        "p2": "z którymi pracujemy"
+      },
+      "items": {
+        "ecommerce": "E-commerce",
+        "healthcare": "Ochrona zdrowia",
+        "education": "Edukacja",
+        "foodtech": "Food tech",
+        "realEstate": "Nieruchomości",
+        "hospitality": "Hotelarstwo",
+        "enterprise": "Rozwiązania dla firm",
+        "entertainment": "Rozrywka",
+        "localBusiness": "Biznes lokalny"
+      }
     }
   }
 }

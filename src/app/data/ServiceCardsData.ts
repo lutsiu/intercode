@@ -1,35 +1,33 @@
 import { ServiceCardType } from "../types/ServiceCardType";
 
+export const servicesTitleKey = "homepage.services.title";
+export const servicesCtaKey = "homepage.services.cta";
+
 const serviceCards: ServiceCardType[] = [
   {
     icon: "/services/star.svg",
-    title: "Аутстаффінг",
-    duration: "Виконання: обговорюється",
-    link: "/"
+    title: "homepage.services.cards.outstaffing.title",
+    duration: "homepage.services.cards.outstaffing.duration"
   },
   {
     icon: "/services/desktop.svg",
-    title: "Розробка сайтів",
-    duration: "Виконання: 2–4 дні",
-    link: "/"
+    title: "homepage.services.cards.web.title",
+    duration: "homepage.services.cards.web.duration"
   },
   {
     icon: "/services/rocket.svg",
-    title: "MVP",
-    duration: "Виконання: 8–14 днів",
-    link: "/"
+    title: "homepage.services.cards.mvp.title",
+    duration: "homepage.services.cards.mvp.duration"
   },
   {
     icon: "/services/smartphone.svg",
-    title: "Мобільні апки",
-    duration: "Виконання: 5–7 днів",
-    link: "/"
+    title: "homepage.services.cards.mobile.title",
+    duration: "homepage.services.cards.mobile.duration"
   },
   {
     icon: "/services/robot.svg",
-    title: "Телеграм боти",
-    duration: "Виконання: 1–2 дні",
-    link: "/"
+    title: "homepage.services.cards.bots.title",
+    duration: "homepage.services.cards.bots.duration"
   }
 ];
 

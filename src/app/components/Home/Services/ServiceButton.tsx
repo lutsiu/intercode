@@ -1,6 +1,8 @@
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
 export default function ServiceButton() {
+  const t = useTranslations("homepage.services");
 
   return (
     <Link
@@ -12,7 +14,7 @@ export default function ServiceButton() {
         flex items-center justify-center
       "
     >
-      Детальніше       
+      {t("cta")}       
     </Link>
   )
 }
