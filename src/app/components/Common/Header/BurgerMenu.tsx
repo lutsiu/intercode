@@ -1,31 +1,43 @@
 "use client";
 
 import { Icon } from "@iconify/react";
-import Link from "next/link";
 import ContactUsButton from "../ContactUsButton";
 import { Dispatch, SetStateAction, useEffect, useRef, useState } from "react";
 import { LANGUAGE_OPTIONS } from "@/app/data/LanguageOptions";
+import { useTranslations, useLocale } from "next-intl";
+import { Link, useRouter, usePathname } from "@/i18n/navigation";
 
 type LangCode = "uk" | "en" | "pl";
 interface Props { setOpenMenu: Dispatch<SetStateAction<boolean>>; openMenu: boolean }
 
 export default function BurgerMenu({ setOpenMenu, openMenu }: Props) {
-  const [active, setActive] = useState<LangCode>("uk");
-  const activeFlag = LANGUAGE_OPTIONS.find((l) => l.code === active)?.flag ?? "🇺🇦";
+  const t = useTranslations("header");
+  const locale = useLocale() as LangCode;
+  const router = useRouter();
+  const pathname = usePathname();
 
   const menuRef = useRef<HTMLElement>(null);
+  const [showing, setShowing] = useState(openMenu);
+
+  useEffect(() => setShowing(openMenu), [openMenu]);
 
   useEffect(() => {
     const onOutside = (e: PointerEvent) => {
-      if (!openMenu) return;
+      if (!showing) return;
       const el = menuRef.current;
       if (el && !el.contains(e.target as Node)) setOpenMenu(false);
     };
     window.addEventListener("pointerdown", onOutside);
     return () => window.removeEventListener("pointerdown", onOutside);
-  }, [openMenu, setOpenMenu]);
+  }, [showing, setOpenMenu]);
 
   const close = () => setOpenMenu(false);
+
+  const activeFlag = LANGUAGE_OPTIONS.find((l) => l.code === locale)?.flag ?? "🇺🇦";
+  const changeLocale = (code: LangCode) => {
+    if (code !== locale) router.push(pathname, { locale: code });
+    setOpenMenu(false);
+  };
 
   return (
     <menu
@@ -47,8 +59,8 @@ export default function BurgerMenu({ setOpenMenu, openMenu }: Props) {
       </button>
 
       <ul className="flex flex-col gap-[1.6rem] px-[3.7rem]">
-        <Link href="/" onClick={close} className="text-[1.2rem] sm:text-[1.4rem]">Про нас</Link>
-        <Link href="/services" onClick={close} className="text-[1.2rem] sm:text-[1.4rem]">Послуги, які працюють</Link>
+        <Link href="/" onClick={close} className="text-[1.2rem] sm:text-[1.4rem]">{t("about")}</Link>
+        <Link href="/services" onClick={close} className="text-[1.2rem] sm:text-[1.4rem]">{t("services")}</Link>
         <Link href="/case-studies" onClick={close} className="text-[1.2rem] sm:text-[1.4rem]">Case Studies</Link>
         <Link href="/rent-it" onClick={close} className="text-[1.2rem] sm:text-[1.4rem]">Rent an IT Solution</Link>
       </ul>
@@ -67,9 +79,9 @@ export default function BurgerMenu({ setOpenMenu, openMenu }: Props) {
             <button
               key={code}
               type="button"
-              onClick={() => setActive(code as LangCode)}
+              onClick={() => changeLocale(code as LangCode)}
               className={`cursor-pointer hover:opacity-80 ${
-                code === active ? "text-[#2C95E0] font-semibold" : "text-black/70"
+                code === locale ? "text-[#2C95E0] font-semibold" : "text-black/70"
               }`}
             >
               {label}

@@ -32,7 +32,7 @@ export default function LanguageSwitcher() {
       onClick={() => setShowModal(prev => !prev)}
       className="flex items-center gap-[0.7rem] relative cursor-pointer"
     >
-      <div className="-mt-0.5">
+      <div className="">
         <Image
           src={triangle}
           alt="Triangle"
@@ -44,7 +44,7 @@ export default function LanguageSwitcher() {
 
       <p className="flex items-start gap-[0.7rem]">
         <span className="text-[2rem] inline-block leading-none">{active.flag}</span>
-        <span className="text-[1.6rem] font-semibold inline-block leading-none mt-[0.05rem]">
+        <span className="text-[1.6rem] font-semibold inline-block leading-none mt-[0.1rem]">
           {active.label}
         </span>
       </p>

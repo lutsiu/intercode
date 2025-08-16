@@ -3,5 +3,25 @@
     "about": "About us",
     "services": "Services that work",
     "contactCta": "Contact us"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Software that earns!",
+      "subtitle": {
+        "p1": "A software development",
+        "p2": "company",
+        "p3": "for your business"
+      }
+    },
+    "howWeWork": {
+      "title": "How we work",
+      "subtitle": "We’ll start on your task within <strong>3 days</strong>",
+      "steps": {
+        "leaveRequest": "Send a request",
+        "discuss": "We discuss",
+        "signContract": "We sign a contract",
+        "startNextDay": "We start the next day"
+      }
+    }
   }
 }

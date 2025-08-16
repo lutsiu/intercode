@@ -3,5 +3,25 @@
     "about": "O nas",
     "services": "Usługi, które działają",
     "contactCta": "Kontakt"
+  },
+  "homepage": {
+    "hero": {
+      "title": "Soft, który zarabia!",
+      "subtitle": {
+        "p1": "Firma tworząca",
+        "p2": "oprogramowanie",
+        "p3": "dla Twojego biznesu"
+      }
+    },
+    "howWeWork": {
+      "title": "Jak pracujemy",
+      "subtitle": "Zaczniemy nad Twoim zadaniem w ciągu <strong>3 dni</strong>",
+      "steps": {
+        "leaveRequest": "Wyślij zapytanie",
+        "discuss": "Ustalamy szczegóły",
+        "signContract": "Podpisujemy umowę",
+        "startNextDay": "Startujemy następnego dnia"
+      }
+    }
   }
 }
