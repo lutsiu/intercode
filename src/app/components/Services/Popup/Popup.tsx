@@ -31,7 +31,7 @@ export default function ServicePopup({ onClose, item }: Props) {
 
   return (
     <div
-      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-center sm:items-start justify-center overflow-y-auto"
+      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-center lg:pt-[10rem] justify-center overflow-y-auto"
       role="dialog"
       aria-modal="true"
       onClick={onClose}

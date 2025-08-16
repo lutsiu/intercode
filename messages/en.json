@@ -259,5 +259,19 @@
         "results": "−42% front desk workload, +70% of patients choose online booking"
       }
     }
+  },
+  "contactPopup": {
+    "title": "Write to us — and we’ll jump in!",
+    "subtitle": {
+      "p1": "We respond fast. No spam. No canned replies.",
+      "p2": "Fill out a short form — we’ll explain everything in plain language."
+    },
+    "form": {
+      "name": "Full name",
+      "email": "Email",
+      "task": "What needs to be done?",
+      "promo": "PROMO CODE",
+      "cta": "Start the project"
+    }
   }
 }

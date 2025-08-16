@@ -259,5 +259,19 @@
         "results": "−42% obciążenia recepcji, +70% pacjentów wybiera rezerwację online"
       }
     }
+  },
+  "contactPopup": {
+    "title": "Napisz do nas — od razu działamy!",
+    "subtitle": {
+      "p1": "Reagujemy szybko. Zero spamu. Bez szablonowych odpowiedzi.",
+      "p2": "Wypełnij krótki formularz — wszystko wyjaśnimy po ludzku."
+    },
+    "form": {
+      "name": "Imię i nazwisko",
+      "email": "Email",
+      "task": "Co trzeba zrobić?",
+      "promo": "KOD PROMO",
+      "cta": "Zacznijmy współpracę"
+    }
   }
 }
