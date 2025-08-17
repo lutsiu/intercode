@@ -1,9 +1,12 @@
 'use client';
 
+import { pageMeta } from "@/app/lib/pageMeta";
 import SectionTitle from "../../components/Common/SectionTitle";
 import PlansSection from "../../components/RentIt/PlansSection";
 import TemplatesSection from "../../components/RentIt/TemplatesSection";
 import { useTranslations } from "next-intl";
+import { Metadata } from "next";
+
 
 export default function RentItPage() {
   const t = useTranslations("rentIt");

@@ -29,7 +29,7 @@ export default function RentItTemplate({ item, onClick }: Props) {
           alt={titleText}
           fill
           className={`object-cover rounded-[2rem] transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
-          onLoadingComplete={() => setLoaded(true)}
+          onLoad={() => setLoaded(true)}
         />
       </div>
 

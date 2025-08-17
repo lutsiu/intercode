@@ -39,7 +39,7 @@ export default function CaseStudyPageCard({
         fill
         sizes="(max-width:640px) 100vw, (max-width:1024px) 80vw, 1200px"
         className={`object-cover object-center transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
-        onLoadingComplete={() => setLoaded(true)}
+        onLoad={() => setLoaded(true)}
         aria-hidden
       />
 

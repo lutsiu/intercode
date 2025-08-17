@@ -8,6 +8,7 @@ import ServicePageCards from "../../components/Services/ServicePageCards";
 import { ServicePageItemType } from "../../types/ServicePageItemType";
 import useLockBodyScroll from "../../hooks/useLockBodyScroll";
 
+
 export default function ServicesPage() {
   const [activePopup, setActivePopup] = useState<ServicePageItemType | null>(null);
   const t = useTranslations("servicesPage");

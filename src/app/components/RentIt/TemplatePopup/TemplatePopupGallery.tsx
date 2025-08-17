@@ -25,7 +25,7 @@ export default function TemplatePopupGallery() {
             className={`object-cover transition-opacity duration-300 ${
               loaded[i] ? "opacity-100" : "opacity-0"
             }`}
-            onLoadingComplete={() =>
+            onLoad={() =>
               setLoaded((prev) => {
                 const next = [...prev];
                 next[i] = true;

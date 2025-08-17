@@ -3,6 +3,9 @@
 import { useTranslations } from 'next-intl';
 import ContactForm from '../../components/Common/ContactPopup/ContactPopupForm';
 import SectionTitle from '../../components/Common/SectionTitle';
+import { pageMeta } from '@/app/lib/pageMeta';
+import { Metadata } from 'next';
+
 
 export default function ContactPage() {
   const t = useTranslations('contactPopup');

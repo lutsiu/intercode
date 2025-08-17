@@ -31,7 +31,7 @@ export default function CaseStudyCard({ id, image, title, subtitle }: CaseStudyT
           alt={titleText}
           fill
           className={`object-cover transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
-          onLoadingComplete={() => setLoaded(true)}
+          onLoad={() => setLoaded(true)}
         />
       </div>
 

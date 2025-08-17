@@ -44,7 +44,7 @@ export default function Estimator() {
               }`}
               sizes="(max-width: 1024px) 24rem"
               priority
-              onLoadingComplete={() => setSmallLoaded(true)}
+              onLoad={() => setSmallLoaded(true)}
             />
           </div>
         </div>
@@ -74,7 +74,7 @@ export default function Estimator() {
           className={`object-cover transition-opacity duration-300 ${
             bgLoaded ? "opacity-100" : "opacity-0"
           }`}
-          onLoadingComplete={() => setBgLoaded(true)}
+          onLoad={() => setBgLoaded(true)}
           priority={false}
         />
 

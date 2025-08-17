@@ -20,7 +20,7 @@ export default function PopupImage({ image, title }: Props) {
         fill
         className={`object-cover ${loaded ? "opacity-100" : "opacity-0"}`}
         sizes="(max-width: 768px) 100vw, 50vw"
-        onLoadingComplete={() => setLoaded(true)}
+        onLoad={() => setLoaded(true)}
       />
     </div>
   );

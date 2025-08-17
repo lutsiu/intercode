@@ -8,6 +8,9 @@ import useEmblaCarousel from "embla-carousel-react";
 import { useCallback, useEffect, useState } from "react";
 import { NextButton, PrevButton } from "../../components/CaseStudies/CaseStudiesPageButtons";
 import CarouselProgress from "../../components/Common/CarouselProgress";
+import { pageMeta } from "@/app/lib/pageMeta";
+import { Metadata } from "next";
+
 
 export default function CaseStudiesPage() {
   const t = useTranslations("caseStudiesPage");
