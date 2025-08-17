@@ -1,15 +1,22 @@
 import { create } from "zustand";
 
-type ContactPopupState = {
+type State = {
   isOpen: boolean;
-  preset: string; 
-  open: (preset?: string) => void;
-  close: () => void;
+  preset: string | null;
 };
 
-export const useContactPopupStore = create<ContactPopupState>((set) => ({
+type Actions = {
+  open: (preset?: string | null) => void; 
+  openPlain: () => void;
+  close: () => void;
+  setPreset: (text: string | null) => void;
+};
+
+export const useContactPopupStore = create<State & Actions>((set) => ({
   isOpen: false,
-  preset: "",
-  open: (preset) => set({ isOpen: true, preset: preset ?? "" }),
-  close: () => set({ isOpen: false, preset: "" }),
+  preset: null,
+  open: (preset) => set({ isOpen: true, preset: preset ?? null }),
+  openPlain: () => set({ isOpen: true, preset: null }),
+  close: () => set({ isOpen: false, preset: null }),
+  setPreset: (text) => set({ preset: text }),
 }));

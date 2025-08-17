@@ -71,7 +71,7 @@ export default function CaseStudyPageCard({
       </div>
 
       <div className="relative z-10 mx-auto md:mx-0">
-        <BlackButton text={t("caseStudiesPage.cta")} onClick={open} />
+        <BlackButton text={t("caseStudiesPage.cta")} onClick={() => open()} />
       </div>
     </article>
   );
