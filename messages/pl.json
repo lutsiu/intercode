@@ -273,5 +273,106 @@
       "promo": "KOD PROMO",
       "cta": "Zacznijmy współpracę"
     }
+  },
+  "rentIt": {
+    "title": "Wypożycz rozwiązanie IT",
+    "hero": {
+      "tagline": {
+        "p1": "Nie kupuj. Wypożycz.",
+        "p2": "Od strony www po całe rozwiązanie."
+      },
+      "intro": {
+        "p1": "Uruchom się w 3 dni bez tworzenia od zera. Wynajmij gotową stronę z pełnym pakietem: design, logika, wsparcie.",
+        "p2": "👀 Wybierz szablon, ⚙️ my skonfigurujemy, 🚀 i jedziesz."
+      }
+    },
+    "cta": "Szczegóły",
+    "templates": {
+      "lokal": {
+        "title": "Template: LOKAL",
+        "desc": "kawiarnie, barberzy, salony, małe firmy"
+      },
+      "mvpOne": {
+        "title": "Template: MVP ONE",
+        "desc": "startupy, SaaS, usługi konsultingowe"
+      },
+      "menu": {
+        "title": "Template: MENU",
+        "desc": "restauracje, dostawa jedzenia, dark kitchen"
+      }
+    },
+    "pricing": {
+      "title": "Koszt uruchomienia",
+      "plans": {
+        "monthly": "Plan miesięczny",
+        "annual": "Plan roczny"
+      },
+      "popular": "Popularny",
+      "perMonth": "/miesiąc",
+      "perYear": "/rok",
+      "choose": "Wybierz",
+      "tiers": {
+        "basic": {
+          "title": "Basic",
+          "desc": "Gdy po prostu potrzebujesz strony — bez zbędnych dodatków.",
+          "features": {
+            "1": "Strona główna + kontakt",
+            "2": "Przycisk Telegram",
+            "3": "Responsywność mobilna"
+          }
+        },
+        "standard": {
+          "title": "Standard",
+          "desc": "Złoty środek dla firm, które chcą wyglądać „na żywo”.",
+          "features": {
+            "1": "Główna + 3 podstrony",
+            "2": "Podmiana zdjęć i tekstów",
+            "3": "Sekcja \"O nas\" lub \"Portfolio\"",
+            "4": "Telegram + e-mail + Instagram"
+          }
+        },
+        "flex": {
+          "title": "Flex",
+          "desc": "Dopasowuje się do Ciebie — jak dobry barista do poranka.",
+          "features": {
+            "1": "Pełna personalizacja treści",
+            "2": "Do 6 podstron",
+            "3": "Animacje, formularz kontaktowy",
+            "4": "Wsparcie w komunikatorze"
+          }
+        }
+      },
+      "tiersAnnual": {
+        "basic": {
+          "desc": "Minimum zachodu — maksimum spokoju przez rok.",
+          "features": {
+            "1": "Strona główna + kontakt",
+            "2": "Przycisk lub formularz Telegram",
+            "3": "Responsywność mobilna",
+            "4": "Hosting + wsparcie techniczne",
+            "5": "1 bonusowa poprawka przy starcie"
+          }
+        },
+        "standard": {
+          "desc": "Wszystko, co potrzebne — i trochę więcej.",
+          "features": {
+            "1": "Główna + 3 podstrony (usługi, o nas, portfolio)",
+            "2": "Responsywność, podstawowe SEO",
+            "3": "Telegram, e-mail, Instagram",
+            "4": "1 redesign lub odświeżenie treści w ciągu roku"
+          }
+        },
+        "flex": {
+          "desc": "Dla tych, którzy chcą „żyć” ze swoją stroną.",
+          "features": {
+            "1": "Do 6 podstron, custom treści",
+            "2": "Animacje, formularz, sekcje „FAQ”, „Blog”",
+            "3": "Priorytetowe wsparcie",
+            "4": "Miesięczne drobne zmiany (1/mies.)",
+            "5": "1 pełne odświeżenie/rok"
+          }
+        }
+      }
+    }
   }
 }

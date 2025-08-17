@@ -1,4 +1,5 @@
 import PlanButton from "./PlanButton";
+import { useTranslations } from "next-intl";
 
 export default function PlanSwitcher({
   plan,
@@ -7,10 +8,20 @@ export default function PlanSwitcher({
   plan: "monthly" | "annual";
   setPlan: (val: "monthly" | "annual") => void;
 }) {
+  const t = useTranslations("rentIt.pricing.plans");
+
   return (
     <div className="flex gap-[1.5rem]">
-      <PlanButton title="Monthly plan" isActive={plan === "monthly"} onClick={() => setPlan("monthly")} />
-      <PlanButton title="Annual plan" isActive={plan === "annual"} onClick={() => setPlan("annual")} />
+      <PlanButton
+        title={t("monthly")}
+        isActive={plan === "monthly"}
+        onClick={() => setPlan("monthly")}
+      />
+      <PlanButton
+        title={t("annual")}
+        isActive={plan === "annual"}
+        onClick={() => setPlan("annual")}
+      />
     </div>
   );
 }

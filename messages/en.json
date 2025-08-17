@@ -273,5 +273,106 @@
       "promo": "PROMO CODE",
       "cta": "Start the project"
     }
+  },
+  "rentIt": {
+    "title": "Rent an IT Solution",
+    "hero": {
+      "tagline": {
+        "p1": "Don't buy. Rent it.",
+        "p2": "Both sites and full solutions."
+      },
+      "intro": {
+        "p1": "Launch in 3 days without building from scratch. Rent a ready-made site with design, logic and support included.",
+        "p2": "👀 Pick a template, ⚙️ we set it up, 🚀 go live."
+      }
+    },
+    "cta": "Learn more",
+    "templates": {
+      "lokal": {
+        "title": "Template: LOKAL",
+        "desc": "coffee shops, barbers, salons, small businesses"
+      },
+      "mvpOne": {
+        "title": "Template: MVP ONE",
+        "desc": "startups, SaaS, consulting services"
+      },
+      "menu": {
+        "title": "Template: MENU",
+        "desc": "restaurants, food delivery, dark kitchens"
+      }
+    },
+    "pricing": {
+      "title": "Launch pricing",
+      "plans": {
+        "monthly": "Monthly plan",
+        "annual": "Annual plan"
+      },
+      "popular": "Popular",
+      "perMonth": "/month",
+      "perYear": "/year",
+      "choose": "Choose",
+      "tiers": {
+        "basic": {
+          "title": "Basic",
+          "desc": "For when you just need a website — nothing extra.",
+          "features": {
+            "1": "Home + contacts",
+            "2": "Telegram button",
+            "3": "Mobile responsive"
+          }
+        },
+        "standard": {
+          "title": "Standard",
+          "desc": "The sweet spot for a business that needs to look alive.",
+          "features": {
+            "1": "Home + 3 inner pages",
+            "2": "Replace photos & copy",
+            "3": "About or Portfolio section",
+            "4": "Telegram + e-mail + Instagram"
+          }
+        },
+        "flex": {
+          "title": "Flex",
+          "desc": "Adapts to you — like a good barista to your morning.",
+          "features": {
+            "1": "Full content customization",
+            "2": "Up to 6 pages",
+            "3": "Animations, contact form",
+            "4": "Messenger support"
+          }
+        }
+      },
+      "tiersAnnual": {
+        "basic": {
+          "desc": "Minimal hassle — maximum peace of mind for a year.",
+          "features": {
+            "1": "Home + contacts",
+            "2": "Telegram button or form",
+            "3": "Mobile responsive",
+            "4": "Hosting + tech support",
+            "5": "1 bonus tweak at launch"
+          }
+        },
+        "standard": {
+          "desc": "Everything you need — plus a little extra.",
+          "features": {
+            "1": "Home + 3 pages (services, about, portfolio)",
+            "2": "Mobile responsive, basic SEO",
+            "3": "Telegram, e-mail, Instagram",
+            "4": "1 redesign or content refresh during the year"
+          }
+        },
+        "flex": {
+          "desc": "For those who want to live with their site.",
+          "features": {
+            "1": "Up to 6 pages, custom content",
+            "2": "Animations, form, FAQ, Blog",
+            "3": "Priority support",
+            "4": "Monthly small changes (1/mo)",
+            "5": "1 full refresh/year"
+          }
+        }
+      }
+    }
   }
 }

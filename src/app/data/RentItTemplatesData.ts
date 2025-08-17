@@ -2,18 +2,18 @@ import { RentItTemplateType } from "../types/RentItType";
 
 export const rentItTemplates: RentItTemplateType[] = [
   {
-    title: "Template: LOKAL",
+    title: "templates.lokal.title",
     image: "/rent-it-solution/lokal.webp",
-    description: "кав’ярні, барбершопи, салони, малі бізнеси",
+    description: "templates.lokal.desc"
   },
   {
-    title: "Template: MVP ONE",
+    title: "templates.mvpOne.title",
     image: "/rent-it-solution/mvp-one.webp",
-    description: "стартапи, SaaS, консалтингові послуги",
+    description: "templates.mvpOne.desc"
   },
   {
-    title: "Template: MENU",
+    title: "templates.menu.title",
     image: "/rent-it-solution/menu.webp",
-    description: "ресторани, доставка їжі, dark kitchen",
-  },
+    description: "templates.menu.desc"
+  }
 ];

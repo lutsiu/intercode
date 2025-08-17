@@ -1,8 +1,10 @@
+// src/app/components/RentIt/PlanCard/PlanCardButton.tsx
 import { useContactPopupStore } from "@/app/store/contactPopupStore";
+import { useTranslations } from "next-intl";
 
 export default function PlanCardButton() {
-
-  const {open} = useContactPopupStore();
+  const { open } = useContactPopupStore();
+  const t = useTranslations();
 
   return (
     <button
@@ -12,7 +14,7 @@ export default function PlanCardButton() {
         flex justify-center items-center w-[24.5rem] sm:w-[30.8rem] h-[6.6rem]
         text-[1.8rem] font-bold cursor-pointer"
     >
-      Обрати
+      {t("rentIt.pricing.choose", { default: "Обрати" })}
     </button>
   );
 }

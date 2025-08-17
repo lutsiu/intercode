@@ -1,14 +1,20 @@
-// RentItTemplate.tsx
+"use client";
+
 import Image from "next/image";
 import { useState } from "react";
 import ImageSkeleton from "../Common/ImageSkeleton";
 import { RentItTemplateType } from "@/app/types/RentItType";
+import { useTranslations } from "next-intl";
 
 interface Props { item: RentItTemplateType; onClick: () => void; }
 
 export default function RentItTemplate({ item, onClick }: Props) {
   const { title, image, description } = item;
   const [loaded, setLoaded] = useState(false);
+  const t = useTranslations("rentIt");
+  const titleText = t(title as string, { default: title });
+  const descText = t(description as string, { default: description });
+  const cta = t("cta", { default: "Детальніше" });
 
   return (
     <article
@@ -20,22 +26,18 @@ export default function RentItTemplate({ item, onClick }: Props) {
         {!loaded && <ImageSkeleton className="w-full h-full rounded-[2rem]" />}
         <Image
           src={image}
-          alt={title}
+          alt={titleText}
           fill
-          className={`object-cover rounded-[2rem] transition-opacity duration-300 ${
-            loaded ? "opacity-100" : "opacity-0"
-          }`}
+          className={`object-cover rounded-[2rem] transition-opacity duration-300 ${loaded ? "opacity-100" : "opacity-0"}`}
           onLoadingComplete={() => setLoaded(true)}
         />
       </div>
 
-      {/* make this the flexible middle block */}
       <div className="mt-[3.2rem] md:mt-0 flex-1 flex flex-col gap-[1.6rem] mb-[1.6rem] text-center">
-        <h5 className="text-[2.4rem] lg:text-[2rem] xl:text-[2.4rem] font-extrabold">{title}</h5>
-        <p className="text-[1.4rem] text-[#656565]">{description}</p>
+        <h5 className="text-[2.4rem] lg:text-[2rem] xl:text-[2.4rem] font-extrabold">{titleText}</h5>
+        <p className="text-[1.4rem] text-[#656565]">{descText}</p>
       </div>
 
-      {/* stick the button to the bottom of the card */}
       <button
         onClick={onClick}
         className="mt-auto text-[1.8rem] font-bold border-[1px] border-black
@@ -43,7 +45,7 @@ export default function RentItTemplate({ item, onClick }: Props) {
                    rounded-full cursor-pointer h-[6.6rem]
                    hover:bg-black hover:text-white duration-300"
       >
-        Детальніше
+        {cta}
       </button>
     </article>
   );
