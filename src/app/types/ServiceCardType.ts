@@ -1,5 +1,6 @@
 export interface ServiceCardType {
-  icon: string;       
-  title: string;       
-  duration: string;   
+  icon: string
+  emoji: string
+  title: string
+  duration: string
 }

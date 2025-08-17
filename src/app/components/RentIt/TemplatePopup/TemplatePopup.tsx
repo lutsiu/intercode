@@ -26,7 +26,7 @@ export default function TemplatePopup({ item, onClose }: Props) {
 
   return (
     <div
-      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start pt-[10rem] justify-center overflow-y-auto"
+      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start pt-[5rem] justify-center overflow-y-auto"
       role="dialog" aria-modal="true" id={item.id} onClick={onClose}
     >
       <div
