@@ -46,7 +46,7 @@ export default async function LocaleLayout({
         className={`${geistSans.variable} ${geistMono.variable} ${montserrat.variable}
                     font-sans h-screen flex flex-col antialiased`}
       >
-        {/* messages & options are provided via src/i18n/request.ts */}
+
         <NextIntlClientProvider>
           <Header />
           <main className="flex-1">

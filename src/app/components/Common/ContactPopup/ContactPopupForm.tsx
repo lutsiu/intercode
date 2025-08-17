@@ -3,40 +3,58 @@
 import { useEffect, useState, FormEvent } from "react";
 import { useTranslations } from "next-intl";
 import { useContactPopupStore } from "@/app/store/contactPopupStore";
+import useContactSubmit from "@/app/hooks/useContactSubmit";
 
-interface Props {
-  containerPx: boolean;
-}
+interface Props { containerPx: boolean; }
 
 export default function ContactPopupForm({ containerPx }: Props) {
   const t = useTranslations("contactPopup.form");
   const { close, preset } = useContactPopupStore();
-  const [task, setTask] = useState("");
+  const { submit, loading } = useContactSubmit();
 
-  // Prefill textarea when popup opens via a plan button
-  useEffect(() => {
-    setTask(preset || "");
-  }, [preset]);
+  const [name, setName]   = useState("");
+  const [email, setEmail] = useState("");
+  const [task, setTask]   = useState("");
+  const [promo, setPromo] = useState("");
+  const [hp, setHp]       = useState(""); // honeypot
 
-  function handleSubmit(e: FormEvent) {
+  useEffect(() => { setTask(preset || ""); }, [preset]);
+
+  async function handleSubmit(e: FormEvent) {
     e.preventDefault();
-    close();
+    const ok = await submit({ name, email, task, promo, hp });
+    if (ok) {
+      setName(""); setEmail(""); setTask(""); setPromo(""); setHp("");
+      close();
+    }
   }
 
   return (
     <form
       onSubmit={handleSubmit}
-      className={`
-        flex flex-col gap-[1.8rem] text-black
-        ${containerPx ? "sm:px-[2rem] md:px-[5.5rem] xl:px-[7.7rem]" : ""}
-        mt-[2.4rem] md:mt-[3.6rem]
-      `}
+      className={[
+        "flex flex-col gap-[1.8rem] text-black",
+        containerPx ? "sm:px-[2rem] md:px-[5.5rem] xl:px-[7.7rem]" : "",
+        "mt-[2.4rem] md:mt-[3.6rem]"
+      ].join(" ")}
     >
+      {/* hidden honeypot */}
       <input
         type="text"
-        name="name-input"
-        id="name-input"
+        tabIndex={-1}
+        autoComplete="off"
+        value={hp}
+        onChange={(e) => setHp(e.target.value)}
+        className="hidden"
+        aria-hidden
+      />
+
+      <input
+        type="text"
+        id="popup-name"
         placeholder={t("name", { default: "Full name" })}
+        value={name}
+        onChange={(e) => setName(e.target.value)}
         className="text-[1.6rem] placeholder-[#A09F9F] text-black
           py-[1.2rem] md:py-[1.5rem] px-[1.5rem] md:px-[3.6rem]
           rounded-full border-[2px] outline-none h-[4.8rem]"
@@ -45,9 +63,10 @@ export default function ContactPopupForm({ containerPx }: Props) {
 
       <input
         type="email"
-        name="email-input"
-        id="email-input"
+        id="popup-email"
         placeholder={t("email", { default: "Email" })}
+        value={email}
+        onChange={(e) => setEmail(e.target.value)}
         className="text-[1.6rem] placeholder-[#A09F9F] text-black
           py-[1.2rem] md:py-[1.5rem] px-[1.5rem] md:px-[3.6rem]
           rounded-full border-[2px] outline-none h-[4.8rem]"
@@ -56,8 +75,7 @@ export default function ContactPopupForm({ containerPx }: Props) {
 
       <div className="relative">
         <textarea
-          name="task"
-          id="task"
+          id="popup-task"
           maxLength={2000}
           placeholder={t("task", { default: "What needs to be done?" })}
           value={task}
@@ -75,9 +93,10 @@ export default function ContactPopupForm({ containerPx }: Props) {
       <div className="flex flex-col lg:flex-row items-start lg:items-center gap-[1.6rem]">
         <input
           type="text"
-          name="promocode-input"
-          id="promocode-input"
+          id="popup-promo"
           placeholder={t("promo", { default: "PROMO CODE" })}
+          value={promo}
+          onChange={(e) => setPromo(e.target.value)}
           className="text-[1.6rem] placeholder-[#A09F9F] text-black
             py-[1.2rem] md:py-[1.5rem] px-[1.5rem] md:px-[3.6rem]
             rounded-full border-[2px] outline-none
@@ -87,12 +106,13 @@ export default function ContactPopupForm({ containerPx }: Props) {
 
         <button
           type="submit"
+          disabled={loading}
           className="text-[1.8rem] lg:text-[1.4rem] xl:text-[1.8rem] font-bold py-[2.1rem]
             px-[1.5rem] md:px-[3.6rem] rounded-full h-[6.6rem]
             w-full lg:w-[45%] text-white bg-black cursor-pointer text-nowrap
-            flex justify-center items-center"
+            flex justify-center items-center disabled:opacity-60"
         >
-          🚀 {t("cta", { default: "Start the project" })}
+          🚀 {loading ? "Sending..." : t("cta", { default: "Start the project" })}
         </button>
       </div>
     </form>

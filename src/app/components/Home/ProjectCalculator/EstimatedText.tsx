@@ -14,7 +14,7 @@ export default function EstimatedText() {
       </p>
       <button
         className="bg-black text-white cursor-pointer rounded-full flex justify-center items-center text-wrap sm:text-nowrap w-[19.3rem] sm:w-[27.6rem] h-[8.3rem] sm:h-[6.6rem] py-[0.9rem] lg:py-[2.1rem] px-[3.6rem] text-[1.8rem] font-bold"
-        onClick={open}
+        onClick={() => open()}
       >
         {t("cta")}
       </button>

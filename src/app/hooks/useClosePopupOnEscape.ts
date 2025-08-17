@@ -7,7 +7,6 @@ export default function useClosePopupOnEscape(onClose: () => void) {
       if (e.key === "Escape") {
         onClose();
       }
-      console.log("exc")
     }
 
     document.addEventListener("keydown", handleKeyDown);
