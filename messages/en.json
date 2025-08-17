@@ -373,6 +373,69 @@
           }
         }
       }
+    },
+    "templateLabel": "TEMPLATE: {id}",
+    "popup": {
+      "cta": "🔑 Rent it",
+      "sections": {
+        "who": "🧑 Who is it for:",
+        "includes": "⚙️ What’s included:",
+        "style": "🎨 Style:",
+        "feature": "💡 Highlight:",
+        "results": "🚀 You get:"
+      },
+      "lokal": {
+        "who": "Local businesses: barbershops, cafés, beauty salons, yoga studios. Look like a brand—without the brand-studio price.",
+        "includes": {
+          "1": "Homepage, services blocks, about, contacts",
+          "2": "Google Map + social links",
+          "3": "Telegram button or online booking (your choice)",
+          "4": "Gallery + short description for each service",
+          "5": "Contact form (no unnecessary fields)"
+        },
+        "style": "Light, big photos, simple fonts. Atmosphere first.",
+        "feature": "“Book” opens Telegram or a form in one click—no boring calendars.",
+        "results": {
+          "1": "We swap content — your site is ready",
+          "2": "Works on all devices",
+          "3": "We’ll set up hosting or hand it over",
+          "4": "Online in 3 days"
+        }
+      },
+      "mvp-one": {
+        "who": "Startups, agencies, consulting—anyone who wants to validate a hypothesis without burning out at the “let’s add more…” stage.",
+        "includes": {
+          "1": "Landing: headline → problem → solution → CTA",
+          "2": "“Why us” / “Who’s it for” section",
+          "3": "Enquiry form (1 click)",
+          "4": "FAQ + contacts",
+          "5": "Email signup (if needed)"
+        },
+        "style": "Clean, white, nothing extra. Action-focused.",
+        "feature": "After submit we show “What’s next” — like a chatbot guiding the flow.",
+        "results": {
+          "1": "Personalized to your project",
+          "2": "Hosting setup or export to your platform",
+          "3": "Everything works — you test the idea"
+        }
+      },
+      "menu": {
+        "who": "Restaurants, delivery, dark kitchens, street-food brands. If you cook — we’ll make it look delicious.",
+        "includes": {
+          "1": "Menu with descriptions and prices",
+          "2": "Categories: breakfast, lunch, drinks, etc.",
+          "3": "Order button → Telegram or form",
+          "4": "Opening hours, map, Instagram",
+          "5": "“Deals of the week” section or homepage banner"
+        },
+        "style": "Rich colors, large photos, subtle animation. Mobile-friendly—even for a hungry iPhone 6 user.",
+        "feature": "Optional countdown: “offer ends in…” or “Only 3 pizzas left with discount”.",
+        "results": {
+          "1": "We replace photos, names, prices",
+          "2": "We’ll connect Telegram or keep a contact form",
+          "3": "Your menu online in 3 days"
+        }
+      }
     }
   }
 }

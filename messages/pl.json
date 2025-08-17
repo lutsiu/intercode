@@ -373,6 +373,69 @@
           }
         }
       }
+    },
+    "templateLabel": "TEMPLATE: {id}",
+    "popup": {
+      "cta": "🔑 Wynajmij",
+      "sections": {
+        "who": "🧑 Dla kogo:",
+        "includes": "⚙️ Co wchodzi w skład:",
+        "style": "🎨 Styl:",
+        "feature": "💡 Atut:",
+        "results": "🚀 Co otrzymasz:"
+      },
+      "lokal": {
+        "who": "Biznes lokalny: barbershopy, kawiarnie, salony urody, studia jogi. Chcesz wyglądać jak marka — bez ceny agencji brandingowej.",
+        "includes": {
+          "1": "Strona główna, bloki usług, o nas, kontakt",
+          "2": "Mapa Google + social media",
+          "3": "Przycisk Telegram lub rezerwacja online (do wyboru)",
+          "4": "Galeria + krótki opis każdej usługi",
+          "5": "Formularz kontaktowy (bez zbędnych pytań)"
+        },
+        "style": "Jasny, duże zdjęcia, proste fonty. Liczy się atmosfera.",
+        "feature": "„Zarezerwuj” otwiera Telegram lub formularz jednym kliknięciem — bez nudnych kalendarzy.",
+        "results": {
+          "1": "Podmieniamy treści — i strona gotowa",
+          "2": "Działa na wszystkich urządzeniach",
+          "3": "Skonfigurujemy hosting lub oddamy gotowe pliki",
+          "4": "Online w 3 dni"
+        }
+      },
+      "mvp-one": {
+        "who": "Startupy, agencje, consulting — każdy, kto chce zweryfikować hipotezę i nie spalić się na etapie „a może jeszcze…”.",
+        "includes": {
+          "1": "Landing: nagłówek → problem → rozwiązanie → CTA",
+          "2": "Sekcja „Dlaczego my” / „Dla kogo”",
+          "3": "Formularz zgłoszeniowy (1 klik)",
+          "4": "FAQ + kontakt",
+          "5": "Subskrypcja e-mail (jeśli potrzebna)"
+        },
+        "style": "Czysto, biało, bez zbędnych elementów. Skupienie na działaniach.",
+        "feature": "Po wysłaniu od razu pokazujemy „Co dalej” — jak chatbot prowadzący użytkownika.",
+        "results": {
+          "1": "Personalizacja pod projekt",
+          "2": "Hosting lub eksport na Twoją platformę",
+          "3": "Wszystko działa — testujesz pomysł"
+        }
+      },
+      "menu": {
+        "who": "Restauracje, dostawy, dark kitchen, marki street-food. Gotujesz — my pokażemy to apetycznie.",
+        "includes": {
+          "1": "Menu z opisami i cenami",
+          "2": "Kategorie: śniadania, lunche, napoje itd.",
+          "3": "Przycisk zamówienia → Telegram lub formularz",
+          "4": "Godziny otwarcia, mapa, Instagram",
+          "5": "Sekcja „Promocje tygodnia” lub baner na stronie głównej"
+        },
+        "style": "Nasycone kolory, duże zdjęcia, miękka animacja. Działa na mobile — nawet dla głodnego użytkownika z iPhone’a 6.",
+        "feature": "Można dodać licznik „do końca promocji” albo „Zostały 3 pizze w promocji”.",
+        "results": {
+          "1": "Podmieniamy zdjęcia, nazwy, ceny",
+          "2": "Podłączymy Telegram lub zostawimy formularz kontaktowy",
+          "3": "Twoje menu online w 3 dni"
+        }
+      }
     }
   }
 }

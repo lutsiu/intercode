@@ -3,57 +3,58 @@ import { RentItPopupInfoType } from "../types/RentItPopupInfoType";
 export const rentItPopups: RentItPopupInfoType[] = [
   {
     id: "lokal",
-    who: "Локальний бізнес: барбершопи, кав’ярня, салон краси, студія йоги. Якщо ти хочеш виглядати, як бренд — і не платити за це бренд-студії.",
+    who: "rentIt.popup.lokal.who",
     includes: [
-      "Головна, блоки з послугами, про нас, контакти",
-      "Карта Google + соцмережі",
-      "Telegram-кнопка або онлайн-запис (на вибір)",
-      "Галерея + короткий опис для кожної послуги",
-      "Форма зворотного зв’язку (без зайвих питань)"
+      "rentIt.popup.lokal.includes.1",
+      "rentIt.popup.lokal.includes.2",
+      "rentIt.popup.lokal.includes.3",
+      "rentIt.popup.lokal.includes.4",
+      "rentIt.popup.lokal.includes.5"
     ],
-    style: "Світлий, з великими фото і простими шрифтами. Акцент на атмосферу.",
-    feature: "Кнопка “Записатись” відкриває Telegram або форму в один клік — без нудних календарів.",
+    style: "rentIt.popup.lokal.style",
+    feature: "rentIt.popup.lokal.feature",
     results: [
-      "Замінюємо контент — і твій сайт готовий",
-      "Працює на всіх пристроях",
-      "Налаштуємо хостинг або дамо тобі все",
-      "З 3 дні — і він в онлайні"
+      "rentIt.popup.lokal.results.1",
+      "rentIt.popup.lokal.results.2",
+      "rentIt.popup.lokal.results.3",
+      "rentIt.popup.lokal.results.4"
     ]
   },
   {
     id: "mvp-one",
-    who: "Стартапи, агенції, консалтинг, будь-хто, хто хоче перевірити гіпотезу і не згоріти на етапі “а може, ще додати…”",
+    who: "rentIt.popup.mvp-one.who",
     includes: [
-      "Лендинг: заголовок → проблема → рішення → CTA",
-      "Блок “Чому ми” / “Кому підходить”",
-      "Форма заявки (1 клік)",
-      "FAQ + контакти",
-      "Підписка на email (якщо треба)"
+      "rentIt.popup.mvp-one.includes.1",
+      "rentIt.popup.mvp-one.includes.2",
+      "rentIt.popup.mvp-one.includes.3",
+      "rentIt.popup.mvp-one.includes.4",
+      "rentIt.popup.mvp-one.includes.5"
     ],
-    style: "Чистий, білий, без зайвого. Сконцентровано на діях.",
-    feature: "Після заявки одразу показується 'Що далі' — ніби chatbot веде користувача по сценарію.",
+    style: "rentIt.popup.mvp-one.style",
+    feature: "rentIt.popup.mvp-one.feature",
     results: [
-      "Персоналізація під проєкт",
-      "Хостинг або експортуємо на твою платформу",
-      "Все працює — ти тестуєш ідею"
+      "rentIt.popup.mvp-one.results.1",
+      "rentIt.popup.mvp-one.results.2",
+      "rentIt.popup.mvp-one.results.3"
     ]
   },
   {
     id: "menu",
-    who: "Ресторани, доставка, dark kitchen, street food бренди. Якщо ти готуєш — ми покажемо це апетитно.",
+    who: "rentIt.popup.menu.who",
     includes: [
-      "Меню з описом і цінами",
-      "Категорії: сніданки, обіди, напої тощо",
-      "Кнопка замовлення → Telegram або форма",
-      "Години роботи, карта, Instagram",
-      "Секція “Акції тижня” або банер на головній"
+      "rentIt.popup.menu.includes.1",
+      "rentIt.popup.menu.includes.2",
+      "rentIt.popup.menu.includes.3",
+      "rentIt.popup.menu.includes.4",
+      "rentIt.popup.menu.includes.5"
     ],
-    style: "Насичені кольори, крупні фото, м’яка анімація. Працює на мобільних — навіть голодному клієнту з айфона 6 буде зручно.",
-    feature: "Можна вставити лічильник “до кінця акції” або “Залишилось 3 піци зі знижкою”.",
+    style: "rentIt.popup.menu.style",
+    feature: "rentIt.popup.menu.feature",
     results: [
-      "Міняємо фото, назви, ціни",
-      "Підключимо Telegram або залишимо контактну форму",
-      "Твоє меню — в онлайні за 3 дні"
+      "rentIt.popup.menu.results.1",
+      "rentIt.popup.menu.results.2",
+      "rentIt.popup.menu.results.3"
     ]
   }
 ];
+export default rentItPopups;
