@@ -10,7 +10,11 @@ import ServicesSection from "../sections/Home/Services";
 import TechnologiesSection from "../sections/Home/Technologies";
 import { pageMeta } from "../lib/pageMeta";
 
-
+export async function generateMetadata(
+  {params}: {params: {locale: string}}
+): Promise<Metadata> {
+  return pageMeta(params.locale, "home", "/");
+}
 
 export default function Home() {
   return (
