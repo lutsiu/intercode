@@ -21,13 +21,13 @@ export default  function Industries() {
       <div className="2xl:hidden">
         <div className="grid grid-cols-2 gap-y-[1.3rem] gap-x-[0.4rem]">
           {industries.slice(0, 6).map((ind, i) => (
-            <IndustryCard key={i} title={ind.title} icon={ind.icon} />
+            <IndustryCard key={i} title={ind.title} />
           ))}
         </div>
 
         <div className="mt-[1.3rem] grid grid-cols-1 gap-y-[1.3rem] gap-x-[0.4rem]">
           {industries.slice(6, 9).map((ind, i) => (
-            <IndustryCard key={i + 6} title={ind.title} icon={ind.icon} />
+            <IndustryCard key={i + 6} title={ind.title} />
           ))}
         </div>
       </div>
@@ -35,7 +35,7 @@ export default  function Industries() {
       {/* 2xl+ — 3×3 grid */}
       <div className="hidden 2xl:grid grid-cols-3 gap-[1.6rem] justify-items-center">
         {industries.map((ind, i) => (
-          <IndustryCard key={i} title={ind.title} icon={ind.icon} fixedWidth />
+          <IndustryCard key={i} title={ind.title} fixedWidth />
         ))}
       </div>
     </section>
