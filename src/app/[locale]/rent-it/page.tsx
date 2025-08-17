@@ -3,9 +3,10 @@ import { Metadata } from "next";
 import RentItPageClient from "./RentItPageClient";
 
 export async function generateMetadata(
-  {params}: {params: {locale: string}}
+  {params}: { params: Promise<{ locale: string }> }
 ): Promise<Metadata> {
-  return pageMeta(params.locale, "rentIt", "/rent-it");
+  const {locale} = await params;
+  return pageMeta(locale, "rentIt", "/rent-it");
 }
 
 export default function Page() {

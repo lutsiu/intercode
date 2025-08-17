@@ -11,9 +11,10 @@ import TechnologiesSection from "../sections/Home/Technologies";
 import { pageMeta } from "../lib/pageMeta";
 
 export async function generateMetadata(
-  {params}: {params: {locale: string}}
+  {params}: { params: Promise<{ locale: string }> }
 ): Promise<Metadata> {
-  return pageMeta(params.locale, "home", "/");
+  const {locale} = await params;
+  return pageMeta(locale, "home", "/");
 }
 
 export default function Home() {

@@ -4,9 +4,10 @@ import ContactPageClient from './ContactPageClient';
 
 
 export async function generateMetadata(
-  {params}: {params: {locale: string}}
+  {params}: { params: Promise<{ locale: string }> }
 ): Promise<Metadata> {
-  return pageMeta(params.locale, "contact", "/contact");
+  const {locale} = await params;
+  return pageMeta(locale, "contact", "/contact");
 }
 
 export default function Page() {
