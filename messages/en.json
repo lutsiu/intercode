@@ -272,6 +272,9 @@
       "task": "What needs to be done?",
       "promo": "PROMO CODE",
       "cta": "Start the project"
+    },
+    "autofill": {
+      "plan": "I'm interested in the {period} plan “{tier}”."
     }
   },
   "rentIt": {

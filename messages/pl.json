@@ -272,6 +272,9 @@
       "task": "Co trzeba zrobić?",
       "promo": "KOD PROMO",
       "cta": "Zacznijmy współpracę"
+    },
+    "autofill": {
+      "plan": "Interesuje mnie {period} „{tier}”."
     }
   },
   "rentIt": {

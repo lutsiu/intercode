@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { LaunchPlanType } from "@/app/types/LaunchPlanType";
 import PlanCardHeader from "./PlanCardHeader";
@@ -6,9 +6,15 @@ import PlanCardDivider from "./PlanCardDivider";
 import PlanCardFeatures from "./PlanCardFeatures";
 import PlanCardButton from "./PlanCardButton";
 
-export default function PlanCard({card, period}: {card:LaunchPlanType, period: "monthly" | "annual"}) {
+export default function PlanCard({
+  card,
+  period,
+}: {
+  card: LaunchPlanType;
+  period: "monthly" | "annual";
+}) {
   const { popular, featuresMarginTop } = card;
-
+  
   return (
     <article
       className={`
@@ -29,7 +35,8 @@ export default function PlanCard({card, period}: {card:LaunchPlanType, period: "
         <PlanCardDivider popular={popular} />
         <PlanCardFeatures {...card} marginTop={featuresMarginTop} />
       </div>
-      <PlanCardButton />
+
+      <PlanCardButton period={period} title={card.title} />
     </article>
   );
 }

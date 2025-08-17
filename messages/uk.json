@@ -272,6 +272,9 @@
       "task": "Що потрібно зробити?",
       "promo": "PROMO CODE",
       "cta": "Почати спільну справу"
+    },
+     "autofill": {
+       "plan": "Цікавить {period} «{tier}»."
     }
   },
   "rentIt": {
