@@ -8,7 +8,7 @@ export default function AboutUsCard({icon, gradient, title, subtitle, descriptio
     <article 
       className={`
         flex flex-col text-center sm:text-left items-center sm:items-start 
-        gap-[3.2rem] sm:gap-[10rem] lg:gap-[8rem] pt-[3.5rem] lg:pt-[4.6rem] px-[2rem] sm:px-[4.6rem]
+        gap-[3.2rem] sm:gap-[10rem] lg:gap-[6rem] xl:gap-[8rem] pt-[3.5rem] lg:pt-[4.6rem] px-[2rem] sm:px-[4.6rem]
         h-[33.9rem] sm:h-[46.8rem] rounded-[5rem]
       `}
       style={{
