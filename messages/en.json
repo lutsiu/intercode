@@ -58,15 +58,15 @@
         "p2": "we work with"
       },
       "items": {
-        "ecommerce": "E-commerce",
-        "healthcare": "Healthcare",
-        "education": "Education",
-        "foodtech": "Food tech",
-        "realEstate": "Real estate",
-        "hospitality": "Hospitality",
-        "enterprise": "Enterprise solutions",
-        "entertainment": "Entertainment",
-        "localBusiness": "Local businesses"
+        "ecommerce": "📦 E-commerce",
+        "healthcare": "💊 Healthcare",
+        "education": "🎓 Education",
+        "foodtech": "🍔 Food tech",
+        "realEstate": "🏠 Real estate",
+        "hospitality": "🛎️ Hospitality",
+        "enterprise": "🖥️ Enterprise solutions",
+        "entertainment": "🎬 Entertainment",
+        "localBusiness": "🛠️ Local businesses"
       }
     },
     "cases": {

@@ -4,6 +4,7 @@ import callImage from "../../../../../public/contact-us-icon.svg";
 import logo from "../../../../../public/Logo.svg";
 import BurgerMenu from "./BurgerMenu";
 import { useState } from "react";
+import Link from "next/link";
 export default function HeaderMobile() {
 
   const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -35,8 +36,9 @@ export default function HeaderMobile() {
         />
       </div>
 
-      <div
-        
+      <Link 
+        href={"/contact"}
+        className="block"
       >
         <Image
           src={callImage}
@@ -45,7 +47,7 @@ export default function HeaderMobile() {
           height={32}
           className="w-[3.2rem] sm:w-[4rem] h-[3.2rem] sm:h-[4rem]"
         />
-      </div>
+      </Link>
       <BurgerMenu openMenu={openMenu} setOpenMenu={setOpenMenu}/>
     </header>
   )

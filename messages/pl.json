@@ -58,15 +58,15 @@
         "p2": "z którymi pracujemy"
       },
       "items": {
-        "ecommerce": "E-commerce",
-        "healthcare": "Ochrona zdrowia",
-        "education": "Edukacja",
-        "foodtech": "Food tech",
-        "realEstate": "Nieruchomości",
-        "hospitality": "Hotelarstwo",
-        "enterprise": "Rozwiązania dla firm",
-        "entertainment": "Rozrywka",
-        "localBusiness": "Biznes lokalny"
+        "ecommerce": "📦 E-commerce",
+        "healthcare": "💊 Opieka zdrowotna",
+        "education": "🎓 Edukacja",
+        "foodtech": "🍔 Foodtech",
+        "realEstate": "🏠 Nieruchomości",
+        "hospitality": "🛎️ Branża hotelarsko-gastronomiczna",
+        "enterprise": "🖥️ Rozwiązania korporacyjne",
+        "entertainment": "🎬 Rozrywka",
+        "localBusiness": "🛠️ Lokal­ne firmy"
       }
     },
     "cases": {
