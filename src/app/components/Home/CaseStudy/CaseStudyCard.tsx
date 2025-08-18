@@ -18,7 +18,7 @@ export default function CaseStudyCard({ id, image, title, subtitle }: CaseStudyT
 
   return (
     <article
-      className="flex flex-col border-[2px] cursor-pointer rounded-[1.6rem] sm:rounded-none sm:border-none border-[#D4D2E3] sm:pt-0 pt-[1.6rem] sm:px-0 px-[1.6rem] sm:pb-0 pb-[3.2rem] shadow-[0_8px_12px_-6px_rgba(0,0,0,0.25)] sm:shadow-none"
+      className="flex flex-col border-[2px] border-transparent cursor-pointer rounded-[1.6rem] duration-300 hover:border-[#D4D2E3] sm:pt-0 pt-[1.6rem] sm:px-0 px-[1.6rem] sm:pb-0 pb-[3.2rem] shadow-[0_8px_12px_-6px_rgba(0,0,0,0.25)] sm:shadow-none"
       onClick={() => open(id)}
     >
       <div className="relative w-full aspect-[326/204] rounded-[1.6rem] overflow-hidden">

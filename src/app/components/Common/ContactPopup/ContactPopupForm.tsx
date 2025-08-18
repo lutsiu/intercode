@@ -109,7 +109,9 @@ export default function ContactPopupForm({ containerPx }: Props) {
           disabled={loading}
           className="text-[1.8rem] lg:text-[1.4rem] xl:text-[1.8rem] font-bold py-[2.1rem]
             px-[1.5rem] md:px-[3.6rem] rounded-full h-[6.6rem]
-            w-full lg:w-[45%] text-white bg-black cursor-pointer text-nowrap
+            w-full lg:w-[45%] bg-black hover:bg-white hover:text-black duration-300 text-white
+            border-[2px] 
+            cursor-pointer text-nowrap
             flex justify-center items-center disabled:opacity-60"
         >
           🚀 {loading ? "Sending..." : t("cta", { default: "Start the project" })}

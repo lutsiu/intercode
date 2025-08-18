@@ -13,16 +13,24 @@ export default function FooterLinks() {
                    mt-[3.2rem] 2xl:mt-[0.5rem]"
       >
         <li>
-          <Link href="/">{t("about")}</Link>
+          <Link
+             className="hover:text-white duration-300"
+             href="/">{t("about")}</Link>
         </li>
         <li>
-          <Link href="/services">{t("services")}</Link>
+          <Link
+             className="hover:text-white duration-300"
+             href="/services">{t("services")}</Link>
         </li>
         <li>
-          <Link href="/case-studies">Case Studies</Link>
+          <Link
+             className="hover:text-white duration-300"
+             href="/case-studies">Case Studies</Link>
         </li>
         <li>
-          <Link href="/rent-it">Rent an IT Solution</Link>
+          <Link
+             className="hover:text-white duration-300"
+             href="/rent-it">Rent an IT Solution</Link>
         </li>
       </ul>
     </nav>

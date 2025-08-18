@@ -9,7 +9,7 @@ export default function FooterSocials() {
 
   return (
     <div className="flex gap-[1.6rem] mt-[2.4rem] 2xl:mt-0">
-      <Link href="/" className="w-[2.4rem] sm:w-[3.6rem] h-[2.4rem] sm:h-[3.6rem] bg-white rounded-[0.5rem] sm:rounded-[1rem] flex items-center justify-center">
+      <Link href="/" className="w-[2.4rem] sm:w-[3.6rem] h-[2.4rem] sm:h-[3.6rem] duration-300 hover:bg-black bg-white rounded-[0.5rem] sm:rounded-[1rem] flex items-center justify-center">
         <Image
           src={instagram}
           alt="Instagram logo"

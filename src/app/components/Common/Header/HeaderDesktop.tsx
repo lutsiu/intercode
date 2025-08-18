@@ -29,25 +29,25 @@ export default function HeaderDesktop({ bgColor }: { bgColor: string }) {
         <div className="py-[2.4rem] px-[2.4rem] flex gap-[3.3rem]">
           <Link
             href="/"
-            className="lg:text-center xl:text-left lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-normal"
+            className="lg:text-center xl:text-left hover:text-white duration-300 lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-normal"
           >
             {t('about')}
           </Link>
           <Link
             href="/services"
-            className="lg:text-center xl:text-left lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-normal"
+            className="lg:text-center xl:text-left hover:text-white duration-300 lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-normal"
           >
             {t('services')}
           </Link>
           <Link
             href="/case-studies"
-            className="lg:text-center xl:text-left lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-normal"
+            className="lg:text-center xl:text-left hover:text-white duration-300 lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-normal"
           >
             Case Studies
           </Link>
           <Link
             href="/rent-it"
-            className="lg:text-center xl:text-left lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-normal"
+            className="lg:text-center xl:text-left hover:text-white duration-300 lg:text-[1.5rem] xl:text-[1.6rem] 2xl:text-[1.8rem] font-normal"
           >
             Rent an IT Solution
           </Link>
