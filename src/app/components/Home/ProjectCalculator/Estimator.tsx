@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState } from "react";
 import calculatorIcon from "../../../../../public/calculator-icon.svg";
 import EstimatedText from "./EstimatedText";
-import sackSmall from "../../../../../public/sack-small.webp";
+import sackSmall from "../../../../../public/sack.webp";
 import ImageSkeleton from "../../Common/ImageSkeleton";
 
 export default function Estimator() {
@@ -28,7 +28,7 @@ export default function Estimator() {
           <Image src={calculatorIcon} alt="Calculator icon" width={80} height={80} />
         </div>
 
-        <div className="flex justify-center">
+        <div className="pl-[3rem]">
           <div className="relative w-[15.6rem] h-[17.6rem] aspect-[308/472] overflow-hidden">
             {!smallLoaded && (
               <div className="absolute inset-0">
@@ -39,7 +39,7 @@ export default function Estimator() {
               src={sackSmall}
               alt="Small calculator image"
               fill
-              className={`object-contain transition-opacity duration-300 ${
+              className={`object-contain transition-opacity duration-300 rotate-[15deg] ${
                 smallLoaded ? "opacity-100" : "opacity-0"
               }`}
               sizes="(max-width: 1024px) 24rem"
@@ -79,7 +79,7 @@ export default function Estimator() {
         />
 
         <div className="hidden lg:block relative z-10">
-          <Image src={calculatorIcon} alt="Calculator icon" width={80} height={80} />
+          <Image src={calculatorIcon} alt="Calculator icon" width={80} height={80}/>
         </div>
         <div className="relative z-10">
           <EstimatedText />

@@ -86,7 +86,7 @@ const serviceItems: ServicePageItemType[] = [
       title: "servicesPage.items.outstaff.popup.title",
       intro: "servicesPage.items.outstaff.popup.intro",
       description: "servicesPage.items.outstaff.popup.description",
-      image: "/servicesPopups/outstaff.webp",
+      image: "/servicesPopups/outstaffing.webp",
       features: [
         "servicesPage.items.outstaff.popup.features.1",
         "servicesPage.items.outstaff.popup.features.2",

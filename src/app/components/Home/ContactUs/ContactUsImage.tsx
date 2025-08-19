@@ -1,10 +1,10 @@
 import Image from "next/image";
-
+import robot from "../../../../../public/smal-robot.webp"
 export default function ContactUsImage() {
 
   return (
     <Image 
-      src={"/hero.webp"} 
+      src={robot} 
       alt="Robot" 
       width={324} 
       height={284}
