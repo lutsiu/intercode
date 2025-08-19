@@ -115,7 +115,12 @@
         "email": "Email",
         "task": "What needs to be done?",
         "promo": "PROMO CODE",
-        "cta": "Start working together"
+        "cta": "Start working together",
+        "sending": "Sending...",
+        "sent": "Message sent!",
+        "errorRequired": "Please fill in all required fields.",
+        "errorEmail": "Enter a valid email.",
+        "errorServer": "Send failed. Please try again."
       },
       "pitch": {
         "title": { "p1": "Got an idea?", "p2": "We’re listening." },
@@ -271,7 +276,9 @@
       "email": "Email",
       "task": "What needs to be done?",
       "promo": "PROMO CODE",
-      "cta": "Start the project"
+      "cta": "Start the project",
+      "sending": "Sending...",
+      "sent": "Message sent!"
     },
     "autofill": {
       "plan": "I'm interested in the {period} plan “{tier}”."

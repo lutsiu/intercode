@@ -89,7 +89,7 @@ export default function ContactUsForm() {
           className="text-[1.8rem] font-bold py-[2.1rem] px-[3.6rem] rounded-full flex items-center justify-center
                      h-[6.6rem] w-full xl:w-[30.9rem] bg-black hover:bg-white hover:text-black duration-300 text-white cursor-pointer text-nowrap disabled:opacity-60"
         >
-          🚀 {loading ? "Sending..." : t("cta")}
+          🚀 {loading ? t("sending") : t("cta")}
         </button>
       </div>
     </form>

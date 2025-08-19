@@ -112,10 +112,15 @@
     "contact": {
       "form": {
         "name": "Imię i nazwisko",
-        "email": "Email",
+        "email": "E-mail",
         "task": "Co trzeba zrobić?",
-        "promo": "PROMO CODE",
-        "cta": "Zacznijmy współpracę"
+        "promo": "KOD PROMO",
+        "cta": "Zacznijmy współpracę",
+        "sending": "Wysyłanie...",
+        "sent": "Wiadomość wysłana!",
+        "errorRequired": "Uzupełnij wszystkie wymagane pola.",
+        "errorEmail": "Wprowadź poprawny adres e-mail.",
+        "errorServer": "Nie udało się wysłać. Spróbuj ponownie."
       },
       "pitch": {
         "title": { "p1": "Masz pomysł?", "p2": "Już słuchamy." },
@@ -271,7 +276,9 @@
       "email": "Email",
       "task": "Co trzeba zrobić?",
       "promo": "KOD PROMO",
-      "cta": "Zacznijmy współpracę"
+      "cta": "Zacznijmy współpracę",
+      "sending": "Wysyłanie...",
+      "sent": "Wiadomość wysłana!"
     },
     "autofill": {
       "plan": "Interesuje mnie {period} „{tier}”."

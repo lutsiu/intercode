@@ -2,17 +2,19 @@
 
 import { useState } from "react";
 import toast from "react-hot-toast";
+import { useTranslations } from "next-intl";
 
 export type ContactBody = {
   name: string;
   email: string;
   task: string;
   promo?: string;
-  hp?: string; // honeypot (optional)
+  hp?: string; // honeypot
 };
 
 export default function useContactSubmit(endpoint = "/api/contact") {
   const [loading, setLoading] = useState(false);
+  const t = useTranslations("homepage.contact.form");
 
   async function submit(body: ContactBody): Promise<boolean> {
     const name = body.name.trim();
@@ -22,15 +24,14 @@ export default function useContactSubmit(endpoint = "/api/contact") {
     const hp = body.hp?.trim();
 
     if (!name || !email || !task) {
-      toast.error("Please fill in all required fields.");
+      toast.error(t("errorRequired"));
       return false;
     }
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      toast.error("Enter a valid email.");
+      toast.error(t("errorEmail"));
       return false;
     }
-    // honeypot: if filled, silently stop
-    if (hp && hp.length > 0) return true;
+    if (hp && hp.length > 0) return true; // honeypot
 
     setLoading(true);
     try {
@@ -43,14 +44,13 @@ export default function useContactSubmit(endpoint = "/api/contact") {
       const json = (await res.json().catch(() => ({}))) as { ok?: boolean; error?: string };
 
       if (!res.ok || json.ok === false) {
-        throw new Error(json.error ?? `Request failed (${res.status})`);
+        throw new Error(json.error ?? `HTTP ${res.status}`);
       }
 
-      toast.success("Message sent!");
+      toast.success(t("sent"));
       return true;
-    } catch (e) {
-      const msg = e instanceof Error ? e.message : "Send failed";
-      toast.error(msg);
+    } catch {
+      toast.error(t("errorServer"));
       return false;
     } finally {
       setLoading(false);
