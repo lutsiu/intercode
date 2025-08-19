@@ -32,7 +32,7 @@ export default function ServicePageCard({ icon, title, subtitle, onClick }: Prop
       className="w-full h-full flex flex-col px-[2rem] md:px-[3.5rem] xl:px-[4.6rem]
                  pt-[3.5rem] md:pt-[4.6rem] pb-[3.5rem] md:pb-[5.6rem]
                  bg-gradient-to-b from-[#9BC3FF] to-[#186AE5] rounded-[4rem]
-                 text-center md:text-left items-center md:items-start"
+                 text-center md:text-left items-center md:items-start relative z-0 overflow-hidden"
     >
       <div className="flex-1 flex flex-col items-center md:items-start">
         <Image src={icon} alt={titleText} width={80} height={80} />

@@ -24,8 +24,8 @@ export default function ServicePageCards({ setActivePopup }: Props) {
       </div>
 
       {/* xl+: 2-row layout (2 + 3 columns) */}
-      <div className="hidden lg:flex flex-col gap-[1rem] isolate">
-        <div className="grid grid-cols-2 gap-[1rem]">
+      <div className="hidden lg:flex flex-col gap-[1rem] isolate h-full">
+        <div className="grid grid-cols-2 gap-[1rem] relative z-10">
           {serviceItems.slice(0, 2).map((it, i) => (
             <ServicePageCard
               key={i}
@@ -36,7 +36,7 @@ export default function ServicePageCards({ setActivePopup }: Props) {
             />
           ))}
         </div>
-        <div className="grid grid-cols-3 gap-[1rem]">
+        <div className="grid grid-cols-3 gap-[1rem] relative z-0">
           {serviceItems.slice(2, 5).map((it, i) => (
             <ServicePageCard
               key={i + 2}
