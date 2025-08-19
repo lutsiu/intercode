@@ -111,7 +111,7 @@ export default function ContactPopupForm({ containerPx }: Props) {
             px-[1.5rem] md:px-[3.6rem] rounded-full h-[6.6rem]
             w-full lg:w-[45%] bg-black hover:bg-white hover:text-black duration-300 text-white
             border-[2px] 
-            cursor-pointer text-nowrap
+            cursor-pointer text-nowrap whitespace-nowrap flex-shrink-0
             flex justify-center items-center disabled:opacity-60"
         >
           🚀 {loading ? t("sending") : t("cta", { default: "Start the project" })}
