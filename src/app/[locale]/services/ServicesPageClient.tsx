@@ -18,7 +18,7 @@ export default function ServicesPageClient() {
   return (
     <section
       aria-label="Services page"
-      className="px-[1.8rem] sm:px-[4rem] lg:px-[8rem] pt-[4.8rem] lg:pt-[7rem] pb-[1.9rem] sm:pb-[4rem] lg:pb-[8rem]"
+      className="px-[1.8rem] sm:px-[4rem] lg:px-[8rem] pt-[4.8rem] lg:pt-[7rem] pb-[1.9rem] sm:pb-[4rem] lg:pb-[8rem] h-full"
     >
       <div className="px-[1.6rem] sm:px-[0]">
         <SectionTitle title={t("title")} paddingBottom={20} />
