@@ -31,7 +31,7 @@ export default function ServicePopup({ onClose, item }: Props) {
 
   return (
     <div
-      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start pt-[5rem] justify-center overflow-y-auto"
+      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start py-[2.5rem] justify-center overflow-y-auto"
       role="dialog"
       aria-modal="true"
       onClick={onClose}
@@ -48,8 +48,8 @@ export default function ServicePopup({ onClose, item }: Props) {
         <Icon
           icon="clarity:close-line"
           width={24}
-          height={24}
-          className="absolute top-[2.4rem] sm:top-[2.6rem] right-[2.4rem] sm:right-[3.7rem] cursor-pointer"
+          height={24} 
+          className="absolute top-[1.4rem] sm:top-[2.4rem] right-[2.4rem] sm:right-[3.7rem] cursor-pointer"
           onClick={onClose}
         />
 

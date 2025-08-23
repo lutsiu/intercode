@@ -14,7 +14,7 @@ export default function ContactUsPopup() {
 
   return (
     <div
-      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start pt-[5rem] justify-center overflow-y-auto"
+      className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start py-[2.5rem] justify-center overflow-y-auto"
       role="dialog"
       aria-modal="true"
       onClick={close}
@@ -32,7 +32,7 @@ export default function ContactUsPopup() {
           icon="clarity:close-line"
           width={24}
           height={24}
-          className="absolute top-[2.4rem] right-[2.4rem] cursor-pointer"
+          className="absolute top-[1.4rem] sm:top-[2.4rem] right-[2.4rem] cursor-pointer"
           onClick={close}
         />
 
