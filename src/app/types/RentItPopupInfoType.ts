@@ -5,4 +5,5 @@ export interface RentItPopupInfoType {
   style: string;
   feature: string;
   results: string[];
+  pictures: string[];
 }

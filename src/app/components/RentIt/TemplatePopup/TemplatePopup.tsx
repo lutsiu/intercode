@@ -24,6 +24,8 @@ export default function TemplatePopup({ item, onClose }: Props) {
   const handleClick = () => { onClose?.(); router.push("/contact"); };
   useClosePopupOnEscape(onClose);
 
+  console.log(item);
+
   return (
     <div
       className="fixed inset-0 z-[1000] bg-black/70 backdrop-blur-sm flex items-start pt-[5rem] justify-center overflow-y-auto"
@@ -43,7 +45,7 @@ export default function TemplatePopup({ item, onClose }: Props) {
               onClick={onClose} />
 
         <SectionTitle title={heading} paddingBottom={0} />
-        <TemplatePopupGallery />
+        <TemplatePopupGallery images={item.pictures} />
         <TemplatePopupContent item={item} />
 
         <div className="w-fit mx-auto">
