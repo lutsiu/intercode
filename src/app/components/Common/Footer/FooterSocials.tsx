@@ -39,7 +39,7 @@ export default function FooterSocials() {
         />
       </Link>
 
-      <Link href="/" className="w-[2.4rem] sm:w-[3.6rem] h-[2.4rem] sm:h-[3.6rem] duration-300 hover:bg-black bg-white rounded-[0.5rem] sm:rounded-[1rem] flex items-center justify-center">
+      <Link href="/https://icon-sets.iconify.design/" target="_blank" className="w-[2.4rem] sm:w-[3.6rem] h-[2.4rem] sm:h-[3.6rem] duration-300 hover:bg-black bg-white rounded-[0.5rem] sm:rounded-[1rem] flex items-center justify-center">
         <Image
           src={linkedin}
           alt="LinkedIn logo"
